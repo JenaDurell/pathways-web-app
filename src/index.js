@@ -1,23 +1,17 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
-import Quiz from "./Components/Quiz";
+import App from './App'
 
-function App() {
-  return (
 
-    <Fragment>
 
-       {/* Quiz Components */}
-        <Quiz />
-      
-    </Fragment> 
 
-  )
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+ document.getElementById("root")
+)
 
 
 
