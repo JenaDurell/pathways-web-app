@@ -15,7 +15,7 @@ class Quiz extends Component{
  setStatefunction = () =>{
    
 //  use reactjs setState 
-  this.setState( {
+  this.setState({
     dataQuestion:quizData
   })
 }
