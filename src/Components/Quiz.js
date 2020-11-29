@@ -37,7 +37,7 @@ class Quiz extends Component{
             
           return <div key className="question"> 
                       <h2> {data.quiz}</h2> 
-                     <Answer key={data.id}  answer={data.findAnswer} rightAnswer={data.rightAnswer}/>
+                     <Answer key={data.id}  answer={data.findAnswer} rightAnswer={data.rightAnswer} rightAnswerText={data.findAnswer[data.rightAnswer]}/>
                  </div>
           })
          }

@@ -10,7 +10,7 @@ let quizData=[
       "a) So that you can spend more money.", 
       "b) Situations change and you need to be sure your needs are met."
     ], 
-    rightAnswer:"b) Situations change and you need to be sure your needs are met."
+    rightAnswer:1
   }
 ]
 

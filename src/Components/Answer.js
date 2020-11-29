@@ -9,6 +9,7 @@ class Answer extends Component {
     answers: this.props.answer,
     clickCheck:true,
     rightAnswer: this.props.rightAnswer,
+    answerText: this.props.rightAnswerText
     
   };
     }
@@ -28,7 +29,8 @@ class Answer extends Component {
             quizObj: {
               date: Date.now(),
               answer : answerIndex,
-              name: "King Good Boy"
+              rightAnswer: this.state.rightAnswer,
+              
             },
           },
         }
@@ -52,7 +54,7 @@ class Answer extends Component {
      
         { this.state.clickCheck ? this.state.answers.map((ans, index) => {
           return <button onClick={()=>this.onAnswer(index)}>{ans}</button>;
-        }) : <button onClick={()=>this.onAnswer}>{this.state.rightAnswer}</button>  } 
+        }) : <button onClick={()=>this.onAnswer}>{this.state.answerText}</button>  } 
 
       </Fragment>
    
