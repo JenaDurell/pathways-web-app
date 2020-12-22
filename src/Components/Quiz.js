@@ -1,7 +1,7 @@
 
 
 
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import quizData from './data'
 import Answer from "./Answer";
 
@@ -30,7 +30,7 @@ class Quiz extends Component{
     return(
 
       
-      <Fragment> 
+      <div> 
       
     
          {this.state.dataQuestion.map(data => {
@@ -42,7 +42,7 @@ class Quiz extends Component{
           })
          }
         
-      </Fragment>
+      </div>
 
     );
   }

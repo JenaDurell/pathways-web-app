@@ -1,0 +1,42 @@
+{
+    "pathwayID": 1,
+    "pathwayName": "Emergency Fund",
+    "pathwaySections": [
+      {
+        "sectionName": "Emergency Fund Definition",
+        "sectionLogo": "[storageRoot]/pathways/sections/images/sectionLogo1-1.jpg",
+        "quizQuestions": [
+          {
+            "Question": "Why is it important to re-evaluate your plan every so often?",
+            "findAnswer": [
+              "a) So that you can spend more money.",
+              "b) Situations change and you need to be sure your needs are met."
+            ],
+            "rightAnswer": 1
+          },
+          {
+            "Question": "Why is it important to re-evaluate stock portfolio?",
+            "findAnswer": [
+              "a) So that you can make more money.",
+              "b) To kill time."
+            ],
+            "rightAnswer": 0
+          }
+        ]
+      },
+      {
+        "sectionName": "Give Jena Money",
+        "sectionLogo": "[storageRoot]/pathways/sections/images/sectionLogo1-2.jpg",
+        "quizQuestions": [
+          {
+            "Question": "Why is it important to give Jena money so often?",
+            "findAnswer": [
+              "a) So that she can spend more money.",
+              "b) Situations change and you need to be sure your needs are met."
+            ],
+            "rightAnswer": 0
+          }
+        ]
+      }
+    ]
+  }
