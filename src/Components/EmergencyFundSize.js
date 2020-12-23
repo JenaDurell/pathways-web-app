@@ -2,8 +2,9 @@ import React from 'react';
 import '../styles/Pathways.css';
 import boat from '../images/boat.png';
 import planeCarHospital from "../images/planeCarHospital.png";
-import bowling from '../images/bowling.png'
-import graduate from "../images/graduate.png"
+import bowling from '../images/bowling.png';
+import graduate from "../images/graduate.png";
+import creditAndCoin from '../images/creditAndCoin.png';
 
 export default function EmergencyFundSize(props) {
     return (
@@ -61,6 +62,8 @@ export default function EmergencyFundSize(props) {
                It is not easy to keep an emergency fund. But, you can do it, even if you start with a little bit at a time.
                <br></br>
                <br></br>
+
+               <img id = 'icons' src = {creditAndCoin} alt = 'creditAndCoin'/>
             </div>
             
         </div>

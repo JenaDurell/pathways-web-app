@@ -1,9 +1,10 @@
 import React from 'react';
-import CheckList from './CheckList'
+import CheckList from './CheckList';
 import '../styles/Pathways.css';
-import phoneDollerSign from "../images/phoneDollerSign.png"
-import moneyMath from '../images/moneyMath.png'
-import winner from '../images/winner.png'
+import phoneDollerSign from "../images/phoneDollerSign.png";
+import moneyMath from '../images/moneyMath.png';
+import winner from '../images/winner.png';
+import blueGraph from '../images/blueGraph.png';
 
 export default function BuildingEmergencyFund(props) {
   return (
@@ -41,7 +42,7 @@ export default function BuildingEmergencyFund(props) {
           <br></br>
           2. If you receive a <b>tax refund,</b> put that into your emergency fund. This is a once a year action that can really make a difference, as long as you <b>make the smart choice!</b>
 
-          <img id="icons" src={winner} alt="winner" />
+          <img id="icons" src={blueGraph} alt="blueGraph" />
       </div>
       <div className = 'section'>
           <b>Checklist</b> 
@@ -51,10 +52,11 @@ export default function BuildingEmergencyFund(props) {
         <div className = "section">
           <b>Great Job!</b>
         </div>
-
+        <img id="icons" src={winner} alt="winner" />
         <div id = "info">
           Getting into the habit of regualrly saving money is critical. It's the little things that make the big difference!
-          
+          <br></br>
+          <br></br>
         </div>
     </div>
   );

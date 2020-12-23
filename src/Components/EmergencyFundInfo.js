@@ -6,6 +6,7 @@ import stress from '../images/stress.png';
 import brokenComputer from '../images/brokenComputer.png';
 import shopping from '../images/shopping.png';
 import fireExtinguisher from '../images/fireExtinguisher.png';
+import loveBucks from '../images/loveBucks.jpg'
 import Quiz from './Quiz';
 
 export default function EmergencyFundInfo(props) {
@@ -25,10 +26,10 @@ export default function EmergencyFundInfo(props) {
           An emergency fund is a stash of money stored away to cover the costs
           of any <b>"financial emergencies".</b>
         </div>
-        <br></br>
+        
         <img id="icons" src={sosAlarm} alt="alarm" />
-        <br></br>
-        {/* <Quiz /> */}
+       
+        
       </div>
       
       <div className="section">
@@ -117,9 +118,9 @@ export default function EmergencyFundInfo(props) {
         <br></br>
         <img id="icons" src={fireExtinguisher} alt="fireExtinguisher" />
         <br></br>
-        Life is already stressful enough, but by keeping an emergency fund, you will have one less thing to worry about.
-        <br></br>
-        <br></br>
+        Life is already stressful enough, but by keeping an emergency fund, you will have one less thing to worry about.     
+
+        <img id='icons' src = {loveBucks} alt = "loveBucks"/>
       </div>
       </div>
     </div>
