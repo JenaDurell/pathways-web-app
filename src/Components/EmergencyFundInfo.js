@@ -18,7 +18,7 @@ export default function EmergencyFundInfo(props) {
         
 
         <div id="info">
-          Emergencies can arise at any time and you need to be prepared for then
+          Emergencies can arise at any time and you need to be prepared for when
           they happen. An emergency fund does just that.
           <br></br>
           <br></br>
@@ -52,7 +52,7 @@ export default function EmergencyFundInfo(props) {
        
         <div id="info">
           An emergency fund allows you to avoid making large purchases on a{' '}
-          <b>credit card</b>or having to take out a <b>loan.</b>
+          <b>credit card</b> or having to take out a <b>loan.</b>
           <br></br>
           <br></br>
           In both of those scenarios you would suffer from having to pay off{' '}
@@ -117,7 +117,7 @@ export default function EmergencyFundInfo(props) {
         <br></br>
         <img id="icons" src={fireExtinguisher} alt="fireExtinguisher" />
         <br></br>
-        Life is already stressful eough, but by keeping an emergency fund, you will have one less thing to worry about.
+        Life is already stressful enough, but by keeping an emergency fund, you will have one less thing to worry about.
         <br></br>
         <br></br>
       </div>
