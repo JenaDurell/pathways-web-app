@@ -27,6 +27,20 @@
 
 ul {
   list-style-type:none;
+  font-size: 3vh;
+  padding: 0
+}
+
+li{
+  padding-bottom: 2vh;
+  text-align: left
+}
+#checkbox{
+  color: gray;
+  border: 4px gray;
+  padding: 8vh;
+  
+  
 }
 
 

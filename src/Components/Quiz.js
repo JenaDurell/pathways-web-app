@@ -1,6 +1,3 @@
-
-
-
 import React, { Component } from "react";
 import quizData from './data'
 import Answer from "./Answer";

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/EmergencyFund.css';
+import '../styles/Pathways.css';
 import sosAlarm from '../images/sosAlarm.png';
 import treeOncar from '../images/treeOnCar.png';
 import stress from '../images/stress.png';

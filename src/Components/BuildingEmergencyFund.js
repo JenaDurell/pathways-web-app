@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/EmergencyFund.css';
+import CheckList from './CheckList'
+import '../styles/Pathways.css';
 import phoneDollerSign from "../images/phoneDollerSign.png"
 import moneyMath from '../images/moneyMath.png'
 import winner from '../images/winner.png'
@@ -45,7 +46,16 @@ export default function BuildingEmergencyFund(props) {
       <div className = 'section'>
           <b>Checklist</b> 
       </div>
+        <CheckList />
 
+        <div className = "section">
+          <b>Great Job!</b>
+        </div>
+
+        <div id = "info">
+          Getting into the habit of regualrly saving money is critical. It's the little things that make the big difference!
+          
+        </div>
     </div>
   );
 }
