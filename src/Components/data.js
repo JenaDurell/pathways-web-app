@@ -44,6 +44,26 @@ let quizData=[
       "d) Do you have a car?"
       ],
     rightAnswer: (1&&3)
+  },
+  {
+    id:5,
+    quiz: "Assuming an average inflation of 2.4%, would your favorite candy bar that cost $1 in 2005 cost more or less today?",
+    findAnswer: [
+      "a) More",
+      "b) Less"
+    ],
+    rightAnswer: 0
+  },
+  {
+    id:6,
+    quiz: "Investing can help you...",
+    findAnswer: [
+      "a) Increase your wealth",
+      "b) Beat inflation",
+      "c) Make money in your sleep",
+      "d) All of the above"
+    ],
+    rightAnswer: 3
   }
 ]
 

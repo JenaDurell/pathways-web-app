@@ -1,23 +1,24 @@
-import React from "react";
-import "./styles/styles.css";
-import EmergencyFundInfo from "./Components/EmergencyFundInfo";
-import EmergencyFundSize from "./Components/EmergencyFundSize";
-import BuildingEmergencyFund from "./Components/BuildingEmergencyFund";
-import WhatIsInvesting from "./Components/WhatIsInvesting";
-import WhyInvest from "./Components/WhyInvest"
+import React from 'react';
+import './styles/styles.css';
+import { Router } from '@reach/router';
+import EmergencyFundInfo from './Components/EmergencyFundInfo';
+import EmergencyFundSize from './Components/EmergencyFundSize';
+import BuildingEmergencyFund from './Components/BuildingEmergencyFund';
+import WhatIsInvesting from './Components/WhatIsInvesting';
+import WhyInvest from './Components/WhyInvest';
+import InvestingEarly from './Components/InvestingEarly';
 
 export default function App() {
-    return (
-        <div>
-         <EmergencyFundInfo />
-         <EmergencyFundSize />
-         <BuildingEmergencyFund />
-         <WhatIsInvesting />
-         <WhyInvest />
-
-          
-        
-      </div> 
-  
-    )
-  }
+  return (
+    <div>
+      <Router>
+        <EmergencyFundInfo path = '/emergencyFundInfo'/>
+        <EmergencyFundSize path = '/emergencyFundSize'/>
+        <BuildingEmergencyFund path = '/buildingEmergencyFund'/>
+        <WhatIsInvesting path = '/whatIsInvesting'/>
+        <WhyInvest path = '/whyInvest'/>
+        <InvestingEarly path = '/investingEarly' />
+      </Router>
+    </div>
+  );
+}

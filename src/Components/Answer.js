@@ -1,5 +1,6 @@
 import React, { Component, Fragment} from "react";
 import axios from 'axios'
+import { Router } from '@reach/router'
 
 class Answer extends Component {
     constructor(props){

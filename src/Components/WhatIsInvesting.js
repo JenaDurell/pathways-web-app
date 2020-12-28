@@ -1,5 +1,7 @@
 import React from 'react';
+import { Router } from '@reach/router'
 import '../styles/Pathways.css';
+import WhyInvest from './WhyInvest'
 import bucks from '../imagesInvesting/bucks.png';
 import sleep from '../imagesInvesting/sleep.png';
 import roadBlock from '../imagesInvesting/roadBlock.png';
@@ -58,6 +60,7 @@ export default function WhatIsInvesting(props) {
           <br></br>
           This is only the start, keep going to learn more about investing!
       </div>
+      <WhyInvest />
     </div>
     
   );

@@ -39,9 +39,73 @@ li{
 #checkbox{
   color: gray;
   border: 4px gray;
-  padding: 8vh;
+  padding: 8vh; 
+}
+
+#calc{
+  background-color: rgb(120, 218, 120);
+  color: mintcream;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#initialAmt{
+  background-color:rgb(237, 237, 237);
+  color: mintcream;
+  font-size: 3vh;
+  width: 30vw;
+
+}
+
+#initialYear{
+  background-color:rgb(237, 237, 237);
+  color: mintcream;
+  font-size: 3vh;
+  width: 30vw;
+
+
+}
+
+#finalYear{
+  background-color:rgb(237, 237, 237);
+  font-size: 3vh;
+  width: 30vw;
+
+
+}
+#button-holder{
+  width: 26vw;
+  margin: auto;
+}
+#button2{
+  background-color: cornflowerblue;
+  color: mintcream;
+  border: 3px mintcream;
+  border-radius: 7vw;
+  font-size: 3vh;
   
+  width: 26vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+}
+.newVal{
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#result{
+  text-align: center;
+  background-color: rgb(120, 218, 120);
+  color: mintcream;
+  font-size: 3vh;
+  width: 40vw;
+  border: 0
+
 }
 
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import '../styles/Pathways.css';
+import { Router } from '@reach/router'
 import boat from '../images/boat.png';
 import planeCarHospital from "../images/planeCarHospital.png";
 import bowling from '../images/bowling.png';
 import graduate from "../images/graduate.png";
 import creditAndCoin from '../images/creditAndCoin.png';
+import BuildingEmergencyFund from './BuildingEmergencyFund';
 
 export default function EmergencyFundSize(props) {
     return (
@@ -66,6 +68,7 @@ export default function EmergencyFundSize(props) {
                <img id = 'icons' src = {creditAndCoin} alt = 'creditAndCoin'/>
             </div>
             
+            <BuildingEmergencyFund />
         </div>
     )
 }

@@ -1,7 +1,11 @@
 import React from 'react';
 import '../styles/Pathways.css';
+import { Router } from '@reach/router';
+import InflationCalc from './InflationCalc'
 import pig from '../imagesInvesting/pig.png';
 import moneyDown from '../imagesInvesting/moneyDown.png';
+import boxer from '../imagesInvesting/boxer.png'
+import InvestingEarly from './InvestingEarly'
 
 
 export default function WhyInvest(props) {
@@ -37,6 +41,25 @@ export default function WhyInvest(props) {
             Assuming the value of money decreases by <b>2.4%</b> every year, every <b>$100</b> bill that you might have in your wallet this year will only be worth <b>$78.89</b> in 10 years.
             <br></br>
             <br></br>
+            <InflationCalc />
         </div>
+
+        <div className = 'section'>
+            <b>Beating Inflation</b>
+        </div>
+        <div id='info'>
+            By investing, you can <b>beat inflation </b>and avoid this from happening.
+      
+        <img id ='icons' src = {boxer} alt = 'boxer' />
+
+        The historical average annual stock market return is said to be <b> 10%. </b>With an average of 2.4% inflation, this leaves us with an average of almost <b> 8% increase in returns!</b>
+        <br></br>
+        <br></br>
+        With the completion of this section, you are one step closer to making informed investment decions!
+        <br></br>
+        <br></br>
+        Let's keep it going!
+        </div>
+        <InvestingEarly />
         </div>
     )}
