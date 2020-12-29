@@ -17,28 +17,24 @@ export default function InflationCalc() {
   const calculate = (e) => {
     e.preventDefault();
     if (clear) setClear(false);
+
     let initialAmt = document.querySelector('#initialAmt').value;
     if (initialAmt === '') return;
-    console.log('num', initialAmt);
+    
     let initialYear = document.querySelector('#initialYear').value;
-    console.log('now', initialYear);
+   
     let finalYear = document.querySelector('#finalYear').value;
-    console.log('future', finalYear);
+  
     let yearNum = finalYear - initialYear;
-    console.log('diff', yearNum);
-    let lessValue = 0.024 * yearNum * initialAmt;
-    console.log('lessVal', lessValue);
-    let itClose = initialAmt - lessValue;
-    console.log('how is it this different', itClose);
+   
     let newValue = initialAmt * 0.978 ** yearNum;
-    console.log('where is 107 even coming from', newValue);
-
+ 
     setnewValue(newValue);
   };
 
   const Clear = (e) => {
     e.preventDefault();
-    console.log('sum:', newValue);
+    
     document.querySelector('form').reset();
     setClear(true);
     setnewValue(0);
@@ -68,9 +64,7 @@ export default function InflationCalc() {
               <button id="button2" onClick={calculate}>
                 Go
               </button>
-              <button id="button2" onClick={Clear}>
-                Clear
-              </button>
+              
             </div>
             <li className = 'newVal'>
             <input type="text" id="result" value={newValue} readOnly placeholder="$0.00" />
@@ -78,6 +72,9 @@ export default function InflationCalc() {
               New Value
             </label>
             </li>
+            <button id="button2" onClick={Clear}>
+                Reset
+              </button>
           </ul>
         </form>
       </div>

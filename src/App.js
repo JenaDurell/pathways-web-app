@@ -7,6 +7,7 @@ import BuildingEmergencyFund from './Components/BuildingEmergencyFund';
 import WhatIsInvesting from './Components/WhatIsInvesting';
 import WhyInvest from './Components/WhyInvest';
 import InvestingEarly from './Components/InvestingEarly';
+import Securities from './Components/Securities'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <WhatIsInvesting path = '/whatIsInvesting'/>
         <WhyInvest path = '/whyInvest'/>
         <InvestingEarly path = '/investingEarly' />
+        <Securities path = '/securities' />
       </Router>
     </div>
   );

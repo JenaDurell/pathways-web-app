@@ -108,4 +108,45 @@ li{
 
 }
 
+#initialInvestment{
+  background-color:rgb(237, 237, 237);
+  color: mintcream;
+  font-size: 3vh;
+  width: 30vw;
+
+}
+
+#annualAdditions{
+  background-color:rgb(237, 237, 237);
+  color: mintcream;
+  font-size: 3vh;
+  width: 30vw;
+
+}
+
+#yrsToGrow{
+  background-color:rgb(237, 237, 237);
+  color: mintcream;
+  font-size: 3vh;
+  width: 30vw;
+
+}
+#result1{
+  text-align: center;
+  background-color: rgb(120, 218, 120);
+  color: mintcream;
+  font-size: 3vh;
+  width: 40vw;
+  border: 0
+}
+
+#result2{
+  text-align: center;
+  background-color: rgb(120, 218, 120);
+  color: mintcream;
+  font-size: 3vh;
+  width: 40vw;
+  border: 0
+}
+
 

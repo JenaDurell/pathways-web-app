@@ -64,7 +64,29 @@ let quizData=[
       "d) All of the above"
     ],
     rightAnswer: 3
-  }
+  },
+  {
+    id:7,
+    quiz: "How much do you need to start investing?",
+    findAnswer: [
+      "a) $1 ",
+      "b) $100 ",
+      "c) $10,000 ",
+      "d) $1 million "
+    ],
+    rightAnswer: 0
+  },
+  {
+    id:8,
+    quiz: "Assuming an 8% annual return, which of the alternatives would make you the most money when you're 65?",
+    findAnswer: [
+      "a) You invest $3,000 every year from age 25 to 35 and then you leave your investments alone.",
+      "b) You invest $3,000 every year from age 35 to 65."
+    ],
+    rightAnswer: 0
+  },
+  
+
 ]
 
 export default quizData;
