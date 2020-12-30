@@ -85,7 +85,43 @@ let quizData=[
     ],
     rightAnswer: 0
   },
-  
+  {
+    id:9,
+    quiz: "What does it mean to purchase stock?",
+    findAnswer: [
+      "a) You purchase a fraction of a company",
+      "b) You purchase a good or service from a company",
+      "c) You purchase a good or service from an individual"
+    ],
+    rightAnswer: 0
+  },
+  {
+    id:10,
+    quiz: "Why do companies sell stock?",
+    findAnswer: [
+      "a) To raise money",
+      "b) Because they are generous"
+    ], 
+    rightAnswer: 0
+  },
+  {
+    id:11,
+    quiz: "What security is riskier to invest in?",
+    findAnswer: [
+      "a) Stocks ",
+      "b) Bonds "
+    ],
+    rightAnswer: 0
+  },
+  {
+    id:12,
+    quiz: "True or false: To earn higher rewards, you have to take greater risk.",
+    findAnswer: [
+      "a) True",
+      "b) False"
+    ],
+    rightAnswer: 0
+  }
 
 ]
 

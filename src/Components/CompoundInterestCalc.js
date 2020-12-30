@@ -21,42 +21,50 @@ export default function CompoundInterestCalc() {
     e.preventDefault();
     if (clear) setClear(false);
 
-    let initialInvestment = document.querySelector('#initialInvestment').value;
+    let initialInvestment = parseInt(document.querySelector('#initialInvestment').value);
     if (initialInvestment === '') return;
 
-    let annualAdditions = document.querySelector('#annualAdditions').value;
-
-    let yrsToGrow = document.querySelector('#yrsToGrow').value;
-
-    let k = 0;
-
-    let sumArrayWith = annualAdditions * Math.pow(1.08, yrsToGrow - k);
-    console.log('mathpow thing', Math.pow(1.08, yrsToGrow - k));
-    console.log('sumarraywith', sumArrayWith);
-
+    let annualAdditions = parseInt(document.querySelector('#annualAdditions').value);
+    let yrsToGrow = parseInt(document.querySelector('#yrsToGrow').value);
     
-      while (k <= yrsToGrow) {
-        sumArrayWith += k
-        console.log('in the while loop', sumArrayWith)
-        k++;
-      }
-      console.log('while result', sumArrayWith);
+    let interestRate = 0.08;
+    
+    let newValueWith = withCompounding();
+    
+    let newValueWithout = withoutCompounding();
+    
+    function withCompounding() {
+      let currentBalance = initialInvestment;
+      let i = 0;
       
+      while (i <yrsToGrow) {
+      
+        let interestAccrued = (currentBalance + annualAdditions) * interestRate;
+        
+        currentBalance = currentBalance + interestAccrued +annualAdditions;
+        console.log('currentBalance', currentBalance);
+        i++;
+      }
+      return Math.round(currentBalance * 100) /100;
+    }
 
-    //need to get summation of sumArrayWith
+    function withoutCompounding() {
 
-    let newValueWith = initialInvestment * 1.08 ** yrsToGrow;
-    console.log('newValWith', newValueWith);
 
-    console.log('addition for fun', sumArrayWith + newValueWith);
+      let fvInitialInv = initialInvestment * (1 + interestRate*yrsToGrow)
+      let fvAnnualContributions = 0
+      
+      let i = 0
 
-    let sumArrayWithout = annualAdditions * (1 + 0.08 * (yrsToGrow - k));
-    console.log('sumarraywithout', sumArrayWithout);
-
-    let newValueWithout = initialInvestment * (1 + 0.08 * yrsToGrow);
-    console.log('newValWithOut', newValueWithout);
-
-    console.log('more math', sumArrayWithout + newValueWithout);
+      while (i<yrsToGrow) {
+        let ytgRemaining = yrsToGrow -i
+        let totalAnnualWithInt =  annualAdditions * (1 + interestRate * ytgRemaining);
+        fvAnnualContributions += totalAnnualWithInt 
+        console.log('fvAnnualContributions', fvAnnualContributions)
+        i++
+      }
+      return (Math.round((fvAnnualContributions + fvInitialInv) * 100) /100) 
+    }
 
     setnewValueWith(newValueWith);
     setnewValueWithout(newValueWithout);
@@ -95,7 +103,7 @@ export default function CompoundInterestCalc() {
             </div>
             <li>
               <label for="result" id="result1">
-                No Compounding:
+                With Compounding:
               </label>
               <input
                 type="text"
@@ -107,7 +115,7 @@ export default function CompoundInterestCalc() {
             </li>
             <li>
               <label for="result" id="result2">
-                With Compounding:
+                No Compounding:
               </label>
               <input
                 type="text"
