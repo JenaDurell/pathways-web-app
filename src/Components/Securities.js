@@ -136,6 +136,8 @@ export default function Securities(props) {
           The stock market is <b>accessible to anyone </b>through online stockbrokers such as <b>brokerages</b> or <b>robo-advisors.</b>
 
           <img id="icons" src={onlineBroker} alt="onlineBroker" />
+
+          You can now do something today that your future self will be thankful for!
       </div>
     </div>
   );

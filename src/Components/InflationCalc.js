@@ -27,7 +27,7 @@ export default function InflationCalc() {
   
     let yearNum = finalYear - initialYear;
    
-    let newValue = initialAmt * 0.978 ** yearNum;
+    let newValue = (Math.round((initialAmt * 0.978 ** yearNum)*100)/100);
  
     setnewValue(newValue);
   };
@@ -49,7 +49,7 @@ export default function InflationCalc() {
         <form id="calc">
           <ul className="form">
             <li>
-              <label for="initialAmt">Initial amount:     </label>
+              <label for="initialAmt">Initial amount: &nbsp; &nbsp;   </label>
               <input type="text" id="initialAmt" placeholder="$0.00" />
             </li>
             <li>

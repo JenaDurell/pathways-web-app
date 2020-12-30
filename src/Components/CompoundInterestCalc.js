@@ -21,11 +21,11 @@ export default function CompoundInterestCalc() {
     e.preventDefault();
     if (clear) setClear(false);
 
-    let initialInvestment = parseInt(document.querySelector('#initialInvestment').value);
+    let initialInvestment = parseInt(document.querySelector('#initialInvestmentInput').value);
     if (initialInvestment === '') return;
 
-    let annualAdditions = parseInt(document.querySelector('#annualAdditions').value);
-    let yrsToGrow = parseInt(document.querySelector('#yrsToGrow').value);
+    let annualAdditions = parseInt(document.querySelector('#annualAdditionsInput').value);
+    let yrsToGrow = parseInt(document.querySelector('#yrsToGrowInput').value);
     
     let interestRate = 0.08;
     
@@ -85,16 +85,16 @@ export default function CompoundInterestCalc() {
         <form id="calc">
           <ul className="form">
             <li>
-              <label for="initialInvestment">Initial investment: </label>
-              <input type="text" id="initialInvestment" placeholder="$1000" />
+              <label for="initialInvestment">Initial investment:&nbsp;&nbsp; </label>
+              <input type="text" id="initialInvestmentInput" placeholder="$1000" />
             </li>
             <li>
               <label for="annualAdditions">Annual additions: </label>
-              <input type="text" id="annualAdditions" placeholder="$100" />
+              <input type="text" id="annualAdditionsInput" placeholder="$100" />
             </li>
             <li>
               <label for="yrsToGrow">Years to grow: </label>
-              <input type="text" id="yrsToGrow" placeholder="10" />
+              <input type="text" id="yrsToGrowInput" placeholder="10" />
             </li>
             <div id="button-holder">
               <button id="button2" onClick={calculate}>

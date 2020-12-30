@@ -121,6 +121,16 @@ let quizData=[
       "b) False"
     ],
     rightAnswer: 0
+  },
+  {
+    id:13, 
+    quiz: " Is the stock market accessible to anyone?",
+    findAnswer: [
+      "a) No, only those with at least $100K",
+      "b) No, only those who work in finance",
+      "c) Yes!"
+    ],
+    rightAnswer: 2
   }
 
 ]

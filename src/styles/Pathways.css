@@ -34,8 +34,10 @@ ul {
 
 li{
   padding-bottom: 2vh;
-  text-align: left
+  display: flex;
+  justify-content: space-between;
 }
+
 #checkbox{
   color: gray;
   border: 4px gray;
@@ -51,62 +53,81 @@ li{
 }
 
 #initialAmt{
-  background-color:rgb(237, 237, 237);
-  color: mintcream;
+  background-color:rgb(172, 171, 171);  
+  color:mintcream ;
   font-size: 3vh;
   width: 30vw;
+  border: 0;
 
 }
 
+
 #initialYear{
-  background-color:rgb(237, 237, 237);
+  background-color:rgb(172, 171, 171);
   color: mintcream;
   font-size: 3vh;
   width: 30vw;
-
+  border: 0;
 
 }
 
 #finalYear{
-  background-color:rgb(237, 237, 237);
+  background-color:rgb(172, 171, 171);
+  color:mintcream;
   font-size: 3vh;
   width: 30vw;
-
-
+  border: 0;
 }
+
 #button-holder{
   width: 26vw;
   margin: auto;
 }
+
 #button2{
   background-color: cornflowerblue;
   color: mintcream;
   border: 3px mintcream;
   border-radius: 7vw;
   font-size: 3vh;
-  
   width: 26vw;
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  
-}
+  }
+
 .newVal{
   padding-top: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: mintcream
 }
+
 #result{
   text-align: center;
   background-color: rgb(120, 218, 120);
-  color: mintcream;
+  color: mintcream !important;
   font-size: 3vh;
   width: 40vw;
-  border: 0
+  border: 0;
+}
+
+input::-webkit-input-placeholder{
+  color: mintcream ;
+}
+input:-moz-placeholder {
+  color: mintcream ;
+}
+
+
+.form{
+  
+
 
 }
+
 
 #initialInvestment{
   background-color:rgb(237, 237, 237);
@@ -116,27 +137,56 @@ li{
 
 }
 
+#initialInvestmentInput{
+  background-color:rgb(172, 171, 171);  
+  color:mintcream ;
+  font-size: 2.75vh;
+  width: 22vw;
+  border: 0;
+
+}
+
 #annualAdditions{
   background-color:rgb(237, 237, 237);
   color: mintcream;
   font-size: 3vh;
   width: 30vw;
+  border: 0;
 
 }
 
-#yrsToGrow{
+#annualAdditionsInput{
+  background-color:rgb(172, 171, 171);  
+  color:mintcream ;
+  font-size: 2.75vh;
+  width: 22vw;
+  border: 0;
+
+}
+
+/* #yrsToGrow{
   background-color:rgb(237, 237, 237);
   color: mintcream;
   font-size: 3vh;
   width: 30vw;
 
+} */
+
+#yrsToGrowInput{
+  background-color:rgb(172, 171, 171);  
+  color:mintcream ;
+  font-size: 2.75vh;
+  width: 22vw;
+  border: 0
+
 }
+
 #result1{
   text-align: center;
   background-color: rgb(120, 218, 120);
   color: mintcream;
-  font-size: 3vh;
-  width: 40vw;
+  font-size: 2.75vh;
+  width: 25vw;
   border: 0
 }
 
@@ -144,8 +194,8 @@ li{
   text-align: center;
   background-color: rgb(120, 218, 120);
   color: mintcream;
-  font-size: 3vh;
-  width: 40vw;
+  font-size: 2.75vh;
+  width: 25vw;
   border: 0
 }
 
