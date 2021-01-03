@@ -1,5 +1,5 @@
 .title-page-header {
-  font-size: 5.5vh;
+  font-size: 3vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +45,7 @@ li{
 }
 
 #calc{
-  background-color: rgb(120, 218, 120);
+  background-color: rgb(111,207,151,1);
   color: mintcream;
   display: flex;
   flex-direction: column;
@@ -107,7 +107,7 @@ li{
 
 #result{
   text-align: center;
-  background-color: rgb(120, 218, 120);
+  background-color: rgb(111,207,151,1);
   color: mintcream !important;
   font-size: 3vh;
   width: 40vw;
@@ -119,13 +119,6 @@ input::-webkit-input-placeholder{
 }
 input:-moz-placeholder {
   color: mintcream ;
-}
-
-
-.form{
-  
-
-
 }
 
 
@@ -183,7 +176,7 @@ input:-moz-placeholder {
 
 #result1{
   text-align: center;
-  background-color: rgb(120, 218, 120);
+  background-color: rgb(111,207,151,1);
   color: mintcream;
   font-size: 2.75vh;
   width: 25vw;
@@ -192,11 +185,16 @@ input:-moz-placeholder {
 
 #result2{
   text-align: center;
-  background-color: rgb(120, 218, 120);
+  background-color: rgb(111,207,151,1);
   color: mintcream;
   font-size: 2.75vh;
   width: 25vw;
   border: 0
 }
 
+#question {
+  font-size: 4.25vh;
+  font-weight: bold;
+  margin-top: 2vh;
+}
 

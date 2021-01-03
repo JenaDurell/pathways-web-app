@@ -128,9 +128,10 @@ let quizData=[
     findAnswer: [
       "a) No, only those with at least $100K",
       "b) No, only those who work in finance",
-      "c) Yes!"
+      "c) Yes!",
+      "d) You can't deal in private equity if you've had certain felony convictions."
     ],
-    rightAnswer: 2
+    rightAnswer: (2&&3)
   }
 
 ]

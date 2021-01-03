@@ -8,6 +8,7 @@ import yikes from '../imagesInvesting/yikes.png';
 import bond from '../imagesInvesting/bond.png';
 import bank from '../imagesInvesting/bank.png';
 import onlineBroker from '../imagesInvesting/onlineBroker.png';
+import Quiz13 from '../Quizzes/Quiz13'
 
 
 export default function Securities(props) {
@@ -84,7 +85,7 @@ export default function Securities(props) {
 
           <img id="icons" src={yikes} alt="yikes" />
 
-          Investig in stocks is therefore <b>not a guaranteed win.</b> But don't let this scare you away from stocks because as mentioned, the average annual stock market return after inflation is about <b>8%.</b>
+          Investing in stocks is therefore <b>not a guaranteed win.</b> But don't let this scare you away from stocks because as mentioned, the average annual stock market return after inflation is about <b>8%.</b>
       </div>
 
       <div className = 'section'>
@@ -139,6 +140,9 @@ export default function Securities(props) {
 
           You can now do something today that your future self will be thankful for!
       </div>
+      <br></br>
+      <br></br>
+      <Quiz13 />
     </div>
   );
 }

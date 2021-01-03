@@ -44,7 +44,9 @@ export default function EmergencyFundSize(props) {
                 If you <b>own a car</b> or if you live far away from family and need to pay for <b>travel, </b> then you should also keep more in your emergecy fund.
 
                 <img id="icons" src={graduate} alt="graduate" />
+                
             </div>
+
             <div className = "section">
                 <b>Stats</b>
             </div>

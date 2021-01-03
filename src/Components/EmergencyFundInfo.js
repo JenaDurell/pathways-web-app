@@ -8,7 +8,7 @@ import brokenComputer from '../images/brokenComputer.png';
 import shopping from '../images/shopping.png';
 import fireExtinguisher from '../images/fireExtinguisher.png';
 import loveBucks from '../images/loveBucks.jpg'
-import Quiz from './Quiz';
+import Quiz from '../Quizzes/Quiz13';
 import EmergencyFundSize from './EmergencyFundSize';
 
 export default function EmergencyFundInfo(props) {

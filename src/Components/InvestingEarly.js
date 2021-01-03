@@ -92,7 +92,7 @@ export default function InvestingEarly(props) {
               <b>Compound Interest</b>
           </div>
           <div id = 'info'>
-              Input values below to see the effect of coumpound interest assuming an <b>8% </b> annual return:
+              Input values below to see the effect of compound interest assuming an <b>8% </b> annual return:
           </div>
           <CompoundInterestCalc />
       </div>
