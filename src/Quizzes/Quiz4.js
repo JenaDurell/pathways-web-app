@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import quizData6 from './data6'
-import Answer6 from "./Answer6";
+import quizData4 from './data4'
+import Answer4 from "./Answer4";
 
 
-class Quiz6 extends Component{
+class Quiz4 extends Component{
 
   
   
@@ -17,7 +17,7 @@ class Quiz6 extends Component{
 
   this.setState( {
 
-    quizInfo : quizData6
+    quizInfo : quizData4
 
   })
 }
@@ -32,14 +32,14 @@ class Quiz6 extends Component{
     return(
 
  
-      <div id = 'quiz'>
+      <div id = 'info'>
          {
           this.state.quizInfo.map(data => {
             
           return <div> 
-                       <span id = 'question'><b>{data.quiz}</b></span>
-                     <Answer6 correctAnswer={data.correctAnswer} answers={data.answers} />
-                     
+                     <span id = 'question'><b>{data.quiz}</b></span>
+                     <Answer4 correctAnswer={data.correctAnswer} answers={data.answers} />
+              
                  </div>
           })
          }
@@ -49,7 +49,7 @@ class Quiz6 extends Component{
   }
 }
 
-export default Quiz6;
+export default Quiz4;
 
 
 

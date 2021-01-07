@@ -1,12 +1,13 @@
 import React from 'react';
 import '../styles/Pathways.css';
-import { Router } from '@reach/router'
+import Quiz3 from '../Quizzes/Quiz3'
+import Quiz4 from '../Quizzes/Quiz4'
 import boat from '../images/boat.png';
 import planeCarHospital from "../images/planeCarHospital.png";
 import bowling from '../images/bowling.png';
 import graduate from "../images/graduate.png";
 import creditAndCoin from '../images/creditAndCoin.png';
-import BuildingEmergencyFund from './BuildingEmergencyFund';
+import Done from './Done';
 
 export default function EmergencyFundSize(props) {
     return (
@@ -41,9 +42,15 @@ export default function EmergencyFundSize(props) {
                 However, the emergency fund amount should <b>vary depending on the person.</b>
                 <br></br>
                 <br></br>
+                If you have a lot of <b>debt</b> or if you have a history of <b>medical issues</b> then it would be good to have a larger emergency fund.
+                <br></br>
+                <br></br>
                 If you <b>own a car</b> or if you live far away from family and need to pay for <b>travel, </b> then you should also keep more in your emergecy fund.
 
                 <img id="icons" src={graduate} alt="graduate" />
+
+                <Quiz3 />
+                <Quiz4 />
                 
             </div>
 
@@ -70,7 +77,7 @@ export default function EmergencyFundSize(props) {
                <img id = 'icons' src = {creditAndCoin} alt = 'creditAndCoin'/>
             </div>
             
-            <BuildingEmergencyFund />
+            <Done />
         </div>
     )
 }

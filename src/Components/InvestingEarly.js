@@ -1,8 +1,9 @@
 import React from 'react';
-import { Router } from '@reach/router';
 import '../styles/Pathways.css';
 import CompoundInterestCalc from './CompoundInterestCalc'
-import Securities from './Securities'
+import Quiz7 from '../Quizzes/Quiz7'
+import Quiz8 from '../Quizzes/Quiz8'
+import Done from './Done'
 import dolla from '../imagesInvesting/dolla.png';
 import tinyToes from '../imagesInvesting/tinyToes.png';
 import arrowUpChart from '../imagesInvesting/arrowUpChart.png';
@@ -56,6 +57,7 @@ export default function InvestingEarly(props) {
         with.
       </div>
 
+    <Quiz7 />
       <div className="section">
         <b>Invest for the Long Term</b>
       </div>
@@ -78,6 +80,12 @@ export default function InvestingEarly(props) {
 
           <img id = 'icons' src = {gardenGirl} alt = 'gardenGirl' />
 
+          <Quiz8 />
+
+          <br></br>
+          <b> Explanation:</b>
+          <br></br>
+          <br></br>
           Assuming an 8% annual return, if you invest <b>$3,000</b> every year from age 25 to 35, when you are 65, your <b>$30,000</b> invested will have grown to more than <b>$472,000.</b>
           <br></br>
           <br></br>
@@ -105,7 +113,7 @@ export default function InvestingEarly(props) {
             <br></br>
             Now that you know <b>why </b>you should invest, read on to learn about some of the available investment options.
         </div>
-        <Securities />
+        <Done />
     </div>
   );
 }

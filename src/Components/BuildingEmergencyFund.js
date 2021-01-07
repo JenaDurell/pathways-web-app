@@ -1,7 +1,6 @@
 import React from 'react';
-import { Router } from '@reach/router'
 import CheckList from './CheckList';
-import WhatIsInvesting from './WhatIsInvesting'
+import Done from './Done'
 import '../styles/Pathways.css';
 import phoneDollerSign from "../images/phoneDollerSign.png";
 import moneyMath from '../images/moneyMath.png';
@@ -60,7 +59,7 @@ export default function BuildingEmergencyFund(props) {
           <br></br>
           <br></br>
         </div>
-        <WhatIsInvesting />
+        <Done />
     </div>
   );
 }

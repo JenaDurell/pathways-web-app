@@ -8,6 +8,7 @@ import WhatIsInvesting from './Components/WhatIsInvesting';
 import WhyInvest from './Components/WhyInvest';
 import InvestingEarly from './Components/InvestingEarly';
 import Securities from './Components/Securities'
+import StockMarket from './Components/StockMarket'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <WhyInvest path = '/whyInvest'/>
         <InvestingEarly path = '/investingEarly' />
         <Securities path = '/securities' />
+        <StockMarket path = '/stockMarket' />
       </Router>
     </div>
   );

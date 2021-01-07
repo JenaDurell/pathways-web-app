@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router } from '@reach/router'
+import Done from './Done'
 import '../styles/Pathways.css';
 import sosAlarm from '../images/sosAlarm.png';
 import treeOncar from '../images/treeOnCar.png';
@@ -8,8 +8,8 @@ import brokenComputer from '../images/brokenComputer.png';
 import shopping from '../images/shopping.png';
 import fireExtinguisher from '../images/fireExtinguisher.png';
 import loveBucks from '../images/loveBucks.jpg'
-import Quiz from '../Quizzes/Quiz13';
-import EmergencyFundSize from './EmergencyFundSize';
+import Quiz2 from '../Quizzes/Quiz2';
+
 
 export default function EmergencyFundInfo(props) {
   return (
@@ -30,6 +30,7 @@ export default function EmergencyFundInfo(props) {
         </div>
         
         <img id="icons" src={sosAlarm} alt="alarm" />
+        <Quiz2 />
        
         
       </div>
@@ -125,7 +126,7 @@ export default function EmergencyFundInfo(props) {
         <img id='icons' src = {loveBucks} alt = "loveBucks"/>
       </div>
       </div>
-      <EmergencyFundSize />
+      <Done />
     </div>
   );
 }

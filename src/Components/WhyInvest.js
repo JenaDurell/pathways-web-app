@@ -1,13 +1,12 @@
 import React from 'react';
 import '../styles/Pathways.css';
-import { Router } from '@reach/router';
 import InflationCalc from './InflationCalc';
 import Quiz5 from '../Quizzes/Quiz5';
 import Quiz6 from '../Quizzes/Quiz6';
 import pig from '../imagesInvesting/pig.png';
 import moneyDown from '../imagesInvesting/moneyDown.png';
 import boxer from '../imagesInvesting/boxer.png';
-import InvestingEarly from './InvestingEarly';
+import Done from './Done';
 
 export default function WhyInvest(props) {
   return (
@@ -71,13 +70,13 @@ export default function WhyInvest(props) {
         <br></br>
         <Quiz6 />
         <br></br>
-        With the completion of this section, you are one step closer to making
+        Fantastic! With the completion of this section, you are one step closer to making
         informed investment decions!
         <br></br>
         <br></br>
         Let's keep it going!
       </div>
-      <InvestingEarly />
+      <Done />
     </div>
   );
 }
