@@ -20,7 +20,7 @@ class Answer5 extends Component {
 
   render() {
     return (
-      <div id = 'two-answer-btn'>
+      <div id = 'answer2'>
         {this.state.answers.map((ans, index) => {
   if (this.state.guess) {
     return <button id = 'quizButton' onClick={this.onAnswer} key={index}>{ans}</button>

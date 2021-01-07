@@ -3,7 +3,7 @@ import React from 'react';
 function Done() {
 
   function doneButton() {
-    alert('Done!');
+    alert('Section completed! Keep up the great work!');
   }
   
   return (

@@ -52,8 +52,10 @@ export default function WhyInvest(props) {
         <br></br>
         <br></br>
         <InflationCalc />
+        <br></br>
       </div>
       <Quiz5 />
+      <br></br>
       <div className="section">
         <b>Beating Inflation</b>
       </div>
@@ -70,12 +72,14 @@ export default function WhyInvest(props) {
         <br></br>
         <Quiz6 />
         <br></br>
+        <br></br>
         Fantastic! With the completion of this section, you are one step closer to making
         informed investment decions!
         <br></br>
         <br></br>
         Let's keep it going!
       </div>
+      <br></br>
       <Done />
     </div>
   );
