@@ -7,7 +7,7 @@ import planeCarHospital from "../images/planeCarHospital.png";
 import bowling from '../images/bowling.png';
 import graduate from "../images/graduate.png";
 import creditAndCoin from '../images/creditAndCoin.png';
-import Done from './Done';
+
 
 export default function EmergencyFundSize(props) {
     return (
@@ -77,7 +77,7 @@ export default function EmergencyFundSize(props) {
                <img id = 'icons' src = {creditAndCoin} alt = 'creditAndCoin'/>
             </div>
             
-            <Done />
+            
         </div>
     )
 }

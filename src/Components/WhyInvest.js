@@ -6,7 +6,7 @@ import Quiz6 from '../Quizzes/Quiz6';
 import pig from '../imagesInvesting/pig.png';
 import moneyDown from '../imagesInvesting/moneyDown.png';
 import boxer from '../imagesInvesting/boxer.png';
-import Done from './Done';
+
 
 export default function WhyInvest(props) {
   return (
@@ -80,7 +80,7 @@ export default function WhyInvest(props) {
         Let's keep it going!
       </div>
       <br></br>
-      <Done />
+      
     </div>
   );
 }

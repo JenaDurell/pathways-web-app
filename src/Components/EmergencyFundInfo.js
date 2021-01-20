@@ -1,5 +1,4 @@
 import React from 'react';
-import Done from './Done'
 import '../styles/Pathways.css';
 import sosAlarm from '../images/sosAlarm.png';
 import treeOncar from '../images/treeOnCar.png';
@@ -126,7 +125,7 @@ export default function EmergencyFundInfo(props) {
         <img id='icons' src = {loveBucks} alt = "loveBucks"/>
       </div>
       </div>
-      <Done />
+      
     </div>
   );
 }

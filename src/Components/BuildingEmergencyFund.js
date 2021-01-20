@@ -1,6 +1,5 @@
 import React from 'react';
 import CheckList from './CheckList';
-import Done from './Done'
 import '../styles/Pathways.css';
 import phoneDollerSign from "../images/phoneDollerSign.png";
 import moneyMath from '../images/moneyMath.png';
@@ -59,7 +58,7 @@ export default function BuildingEmergencyFund(props) {
           <br></br>
           <br></br>
         </div>
-        <Done />
+        
     </div>
   );
 }

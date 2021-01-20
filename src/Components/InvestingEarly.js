@@ -3,7 +3,6 @@ import '../styles/Pathways.css';
 import CompoundInterestCalc from './CompoundInterestCalc'
 import Quiz7 from '../Quizzes/Quiz7'
 import Quiz8 from '../Quizzes/Quiz8'
-import Done from './Done'
 import dolla from '../imagesInvesting/dolla.png';
 import tinyToes from '../imagesInvesting/tinyToes.png';
 import arrowUpChart from '../imagesInvesting/arrowUpChart.png';
@@ -113,7 +112,7 @@ export default function InvestingEarly(props) {
             <br></br>
             Now that you know <b>why </b>you should invest, read on to learn about some of the available investment options.
         </div>
-        <Done />
+        
     </div>
   );
 }

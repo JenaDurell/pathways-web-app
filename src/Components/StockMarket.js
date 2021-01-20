@@ -3,7 +3,7 @@ import '../styles/Pathways.css';
 import Quiz13 from '../Quizzes/Quiz13'
 import bank from '../imagesInvesting/bank.png';
 import onlineBroker from '../imagesInvesting/onlineBroker.png';
-import Done from './Done'
+
 
 
 export default function StockMarket(props) {
@@ -37,7 +37,7 @@ export default function StockMarket(props) {
         You can now do something today that your future self will be thankful
         for!
       <br></br>
-      <Done />
+      
       </div>
       </div>
    

@@ -9,7 +9,7 @@ import lootSack from '../imagesInvesting/lootSack.png';
 import coinHand from '../imagesInvesting/coinHand.png';
 import yikes from '../imagesInvesting/yikes.png';
 import bond from '../imagesInvesting/bond.png';
-import Done from './Done'
+
 
 export default function Securities(props) {
   return (
@@ -138,7 +138,7 @@ export default function Securities(props) {
         Understanding what you can invest in will give you a leg up when making
         investment decisions.
       </div>
-          <Done />
+          
     </div>
   );
 }
