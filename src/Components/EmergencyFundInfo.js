@@ -8,6 +8,7 @@ import shopping from '../images/shopping.png';
 import fireExtinguisher from '../images/fireExtinguisher.png';
 import loveBucks from '../images/loveBucks.jpg'
 import Quiz2 from '../Quizzes/Quiz2';
+import { Link } from '@reach/router';
 
 
 export default function EmergencyFundInfo(props) {
@@ -125,7 +126,11 @@ export default function EmergencyFundInfo(props) {
         <img id='icons' src = {loveBucks} alt = "loveBucks"/>
       </div>
       </div>
-      
+      <Link to="/emergencyFundMap">
+     <button id = 'finish' type="button">
+          Finish
+     </button>
+ </Link>
     </div>
   );
 }

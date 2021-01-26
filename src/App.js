@@ -11,6 +11,7 @@ import Securities from './Components/Securities'
 import StockMarket from './Components/StockMarket'
 import PathwaysHome from './Components/PathwaysHome'
 import EmergencyFundMap from './Components/EmergencyFundMap'
+import FirstInvestingMap from './Components/firstInvestingMap'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Router>
         <PathwaysHome path = '/pathwaysHome'/>
         <EmergencyFundMap path = '/emergencyFundMap' />
+        <FirstInvestingMap path = '/firstInvestingMap'/>
         <EmergencyFundInfo path = '/emergencyFundInfo'/>
         <EmergencyFundSize path = '/emergencyFundSize'/>
         <BuildingEmergencyFund path = '/buildingEmergencyFund'/>

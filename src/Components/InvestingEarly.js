@@ -8,6 +8,7 @@ import tinyToes from '../imagesInvesting/tinyToes.png';
 import arrowUpChart from '../imagesInvesting/arrowUpChart.png';
 import gardenGirl from '../imagesInvesting/gardenGirl.png';
 import scale from '../imagesInvesting/scale.png';
+import { Link } from '@reach/router';
 
 
 
@@ -112,6 +113,12 @@ export default function InvestingEarly(props) {
             <br></br>
             Now that you know <b>why </b>you should invest, read on to learn about some of the available investment options.
         </div>
+
+        <Link to="/firstInvestingMap">
+        <button id="finish" type="button">
+          Finish
+        </button>
+      </Link>
         
     </div>
   );

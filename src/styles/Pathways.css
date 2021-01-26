@@ -241,6 +241,24 @@ input:-moz-placeholder {
   font-size: 3.5vh;
 }
 
+#finish{
+  background-color: white;
+  color: black;
+  font-size: 2.75vh;
+  margin-top: 2vh;
+  border-radius: 85vw;
+  outline: none;
+  padding: 1vh;
+  width: 99vw;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none !important;
+}
+
+a:link {
+ text-decoration: none;
+}
+
 #done{
   background-color: cornflowerblue;
   color: mintcream;
@@ -255,12 +273,12 @@ input:-moz-placeholder {
   width: 85vw;
   display: flex;
   justify-content: space-around;
-
 }
 
 .loveBucksIcon{
-  width: 40vw
+  width: 37vw
 }
+
 .mapIcons{
   width: 65vw;
   margin-bottom: -3em;
@@ -273,8 +291,6 @@ input:-moz-placeholder {
   flex-direction: column;
   align-content: space-around;
   width: 95vw;
-  
-  
 }
 
 #emergencyFundInfo{
@@ -289,10 +305,7 @@ input:-moz-placeholder {
   justify-content: flex-end;
   align-items: center;
   width: 95vw;
- 
-
-
-}
+ }
 
 #buildingEmergencyFund{
   display: flex;
@@ -301,7 +314,87 @@ input:-moz-placeholder {
 }
 
 input[type="image" i]{
- 
   margin-top: -1em;
   margin-right: -1em;
+}
+
+
+h5{
+  font-size: 6vw;
+}
+
+#pathwaysMap{
+  padding-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 95vw;
+}
+
+#toEmergencyFund{
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#toInvesting1{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 8vh;
+}
+
+#investing1Map{
+  padding-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 95vw;
+
+}
+
+#whatIsInvesting{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#whyInvest{
+  margin-top: 3vh;
+  display: flex;
+  margin-bottom: 3vh;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#investingEarly{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 92vw;
+}
+
+#securities{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#stockMarket{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 92vw;
+  margin: auto;
+
 }
