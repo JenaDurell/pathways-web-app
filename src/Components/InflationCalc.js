@@ -22,7 +22,7 @@ export default function InflationCalc() {
     if (initialAmt === '') return;
     
     let initialYear = document.querySelector('#initialYear').value;
-   
+    
     let finalYear = document.querySelector('#finalYear').value;
   
     let yearNum = finalYear - initialYear;

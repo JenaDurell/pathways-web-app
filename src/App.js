@@ -9,11 +9,15 @@ import WhyInvest from './Components/WhyInvest';
 import InvestingEarly from './Components/InvestingEarly';
 import Securities from './Components/Securities'
 import StockMarket from './Components/StockMarket'
+import PathwaysHome from './Components/PathwaysHome'
+import EmergencyFundMap from './Components/EmergencyFundMap'
 
 export default function App() {
   return (
     <div>
       <Router>
+        <PathwaysHome path = '/pathwaysHome'/>
+        <EmergencyFundMap path = '/emergencyFundMap' />
         <EmergencyFundInfo path = '/emergencyFundInfo'/>
         <EmergencyFundSize path = '/emergencyFundSize'/>
         <BuildingEmergencyFund path = '/buildingEmergencyFund'/>
