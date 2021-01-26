@@ -9,7 +9,7 @@ import lootSack from '../imagesInvesting/lootSack.png';
 import coinHand from '../imagesInvesting/coinHand.png';
 import yikes from '../imagesInvesting/yikes.png';
 import bond from '../imagesInvesting/bond.png';
-import { Link } from '@reach/router';
+import FinishMiniFirstInvestPath from '../Components/FinishMiniFirstInvestPath'
 
 
 export default function Securities(props) {
@@ -139,11 +139,7 @@ export default function Securities(props) {
         Understanding what you can invest in will give you a leg up when making
         investment decisions.
       </div>
-      <Link to="/firstInvestingMap">
-        <button id="finish" type="button">
-          Finish
-        </button>
-      </Link>  
+      <FinishMiniFirstInvestPath />
     </div>
   );
 }

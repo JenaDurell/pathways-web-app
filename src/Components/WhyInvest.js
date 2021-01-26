@@ -6,7 +6,7 @@ import Quiz6 from '../Quizzes/Quiz6';
 import pig from '../imagesInvesting/pig.png';
 import moneyDown from '../imagesInvesting/moneyDown.png';
 import boxer from '../imagesInvesting/boxer.png';
-import { Link } from '@reach/router';
+import FinishMiniFirstInvestPath from '../Components/FinishMiniFirstInvestPath'
 
 
 export default function WhyInvest(props) {
@@ -81,11 +81,7 @@ export default function WhyInvest(props) {
         Let's keep it going!
       </div>
       <br></br>
-      <Link to="/firstInvestingMap">
-        <button id="finish" type="button">
-          Finish
-        </button>
-      </Link>
+      <FinishMiniFirstInvestPath />
     </div>
   );
 }

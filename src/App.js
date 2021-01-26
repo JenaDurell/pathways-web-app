@@ -11,7 +11,7 @@ import Securities from './Components/Securities'
 import StockMarket from './Components/StockMarket'
 import PathwaysHome from './Components/PathwaysHome'
 import EmergencyFundMap from './Components/EmergencyFundMap'
-import FirstInvestingMap from './Components/firstInvestingMap'
+import FirstInvestingMap from './Components/FirstInvestingMap'
 
 export default function App() {
   return (

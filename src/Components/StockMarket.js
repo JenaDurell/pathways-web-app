@@ -3,7 +3,7 @@ import '../styles/Pathways.css';
 import Quiz13 from '../Quizzes/Quiz13'
 import bank from '../imagesInvesting/bank.png';
 import onlineBroker from '../imagesInvesting/onlineBroker.png';
-import { Link } from '@reach/router';
+import FinishInvesting from './FinishInvesting'
 
 
 export default function StockMarket(props) {
@@ -39,11 +39,12 @@ export default function StockMarket(props) {
       <br></br>
       
       </div>
-      <Link to="/pathwaysHome">
+      <FinishInvesting />
+      {/* <Link to="/pathwaysHome">
         <button id="finish" type="button">
           Finish
         </button>
-      </Link>
+      </Link> */}
       </div>
    
     )

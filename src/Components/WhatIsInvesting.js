@@ -3,7 +3,7 @@ import '../styles/Pathways.css';
 import bucks from '../imagesInvesting/bucks.png';
 import sleep from '../imagesInvesting/sleep.png';
 import roadBlock from '../imagesInvesting/roadBlock.png';
-import { Link } from '@reach/router';
+import FinishMiniFirstInvestPath from '../Components/FinishMiniFirstInvestPath'
 
 export default function WhatIsInvesting(props) {
   return (
@@ -59,11 +59,7 @@ export default function WhatIsInvesting(props) {
           <br></br>
           This is only the start, keep going to learn more about investing!
       </div>
-      <Link to="/firstInvestingMap">
-        <button id="finish" type="button">
-          Finish
-        </button>
-      </Link>
+      <FinishMiniFirstInvestPath />
     </div>
     
   );

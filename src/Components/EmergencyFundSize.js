@@ -7,7 +7,8 @@ import planeCarHospital from '../images/planeCarHospital.png';
 import bowling from '../images/bowling.png';
 import graduate from '../images/graduate.png';
 import creditAndCoin from '../images/creditAndCoin.png';
-import { Link } from '@reach/router';
+import FinishMiniEmergencyPath from './FinishMiniEmergencyPath'
+
 
 export default function EmergencyFundSize(props) {
   return (
@@ -75,11 +76,7 @@ export default function EmergencyFundSize(props) {
         <br></br>
         <img id="icons" src={creditAndCoin} alt="creditAndCoin" />
       </div>
-      <Link to="/emergencyFundMap">
-        <button id="finish" type="button">
-          Finish
-        </button>
-      </Link>
+      <FinishMiniEmergencyPath />
     </div>
   );
 }

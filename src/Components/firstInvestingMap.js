@@ -7,7 +7,7 @@ import coinAndCap from '../imagesInvesting/coinAndCap.png';
 import blueGraph from '../images/blueGraph.png';
 import securities from '../imagesInvesting/securities.png';
 
-function firstInvestingMap() {
+function FirstInvestingMap() {
   return (
     <div>
       <div className="section">
@@ -80,4 +80,4 @@ function firstInvestingMap() {
   );
 }
 
-export default firstInvestingMap;
+export default FirstInvestingMap;
