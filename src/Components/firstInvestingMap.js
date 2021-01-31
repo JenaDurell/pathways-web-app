@@ -1,26 +1,31 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import '../styles/Pathways.css';
-import investingGraph from '../imagesInvesting/investingGraph.png';
-import creditAndCoin from '../images/creditAndCoin.png';
-import coinAndCap from '../imagesInvesting/coinAndCap.png';
-import blueGraph from '../images/blueGraph.png';
-import securities from '../imagesInvesting/securities.png';
+import mapPurpleGraph from '../imagesMap/mapPurpleGraph.png';
+import mapCreditAndCoin from '../imagesMap/mapCreditAndCoin.png';
+import mapGrad from '../imagesMap/mapGrad.png';
+import mapBlueGraph from '../imagesMap/mapBlueGraph.png';
+import mapSecurities from '../imagesMap/mapSecurities.png';
 
 function FirstInvestingMap() {
   return (
     <div>
+      <Link to="/pathwaysHome">
+        <button id="backButton" type="button">
+          Back
+        </button>
+      </Link>
+
+      <div id="investing1Map">
       <div className="section">
         <b>Investing 1</b>
       </div>
-
-      <div id="investing1Map">
         <div id="whatIsInvesting">
           <Link to="/whatIsInvesting">
             <input
               className="mapIcons"
               type="image"
-              src={investingGraph}
+              src={mapPurpleGraph}
               alt="investing graph"
             />
           </Link>
@@ -28,15 +33,15 @@ function FirstInvestingMap() {
         </div>
 
         <div id="whyInvest">
-            <h5>Why invest?</h5>
           <Link to='/whyInvest'>
             <input
               className="mapIcons"
               type="image"
-              src={creditAndCoin}
+              src={mapCreditAndCoin}
               alt="credit card and coins"
-            />
+              />
           </Link>
+              <h5>Why invest?</h5>
         </div>
 
         <div id="investingEarly">
@@ -45,23 +50,23 @@ function FirstInvestingMap() {
             <input
               className="mapIcons"
               type="image"
-              src={coinAndCap}
-              alt="coinAndCap"
+              src={mapGrad}
+              alt="Grad"
             />
           </Link>
           <h5>Investing early</h5>
         </div>
 
         <div id="securities">
-            <h5>Securities</h5>
           <Link to='/securities'>
             <input
               className="mapIcons"
               type="image"
-              src={securities}
+              src={mapSecurities}
               alt="securities"
-            />
+              />
           </Link>
+              <h5>Securities</h5>
         </div>
 
         <div id="stockMarket">
@@ -69,7 +74,7 @@ function FirstInvestingMap() {
             <input
               className="mapIcons"
               type="image"
-              src={blueGraph}
+              src={mapBlueGraph}
               alt="blue graph"
             />
           </Link>

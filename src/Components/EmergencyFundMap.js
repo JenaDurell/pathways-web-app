@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import '../styles/Pathways.css';
-import loveBucks from '../images/loveBucks.jpg';
-import creditAndCoin from '../images/creditAndCoin.png';
-import blueGraph from '../images/blueGraph.png';
+import mapLoveBucks from '../imagesMap/mapLoveBucks.png';
+import mapCreditAndCoin from '../imagesMap/mapCreditAndCoin.png';
+import mapBlueGraph from '../imagesMap/mapBlueGraph.png';
 
 function EmergencyFundMap() {
   return (
     <div>
+      <Link to="/pathwaysHome">
+        <button id="backButton" type="button">
+          Back
+        </button>
+      </Link>
       <div className="section">
         <b>Emergency Fund</b>
       </div>
@@ -17,29 +22,29 @@ function EmergencyFundMap() {
             <input
               className="loveBucksIcon"
               type="image"
-              src={loveBucks}
+              src={mapLoveBucks}
               alt="loveBucks"
             />
           </Link>
-         <h5> What is an emergency fund?</h5>
+          <h5> What is an emergency fund?</h5>
         </div>
         <div id="emergencyFundSize">
-          <h5>Emergency fund size</h5>
           <Link to="/emergencyFundSize">
             <input
               className="mapIcons"
               type="image"
-              src={creditAndCoin}
+              src={mapCreditAndCoin}
               alt="creditAndCoin"
             />
           </Link>
+          <h5>Emergency fund size</h5>
         </div>
         <div id="buildingEmergencyFund">
           <Link to="/buildingEmergencyFund">
             <input
               className="mapIcons"
               type="image"
-              src={blueGraph}
+              src={mapBlueGraph}
               alt="blueGraph"
             />
           </Link>

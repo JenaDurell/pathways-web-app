@@ -9,10 +9,16 @@ import fireExtinguisher from '../images/fireExtinguisher.png';
 import loveBucks from '../images/loveBucks.jpg'
 import Quiz2 from '../Quizzes/Quiz2';
 import FinishMiniEmergencyPath from './FinishMiniEmergencyPath'
-
+import { Link } from '@reach/router'
 
 export default function EmergencyFundInfo(props) {
   return (
+    <div>
+      <Link to="/emergencyFundMap">
+        <button id="backButton" type="button">
+          Back
+        </button>
+      </Link>
     <div className="title-page-header">
       <b>Emergency Fund</b>
       
@@ -127,6 +133,7 @@ export default function EmergencyFundInfo(props) {
       </div>
       </div>
       <FinishMiniEmergencyPath />
+    </div>
     </div>
   );
 }
