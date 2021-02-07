@@ -24,6 +24,16 @@ html, body {
   margin-top: 2vh;
 }
 
+#confidenceText{
+  font-size: 2.75vh;
+  margin-top: 2vh;
+}
+#confidenceSubText{
+  font-size: 2vh;
+  margin-top: 3vh;
+
+}
+
 #icons {
   display: flex;
   flex-direction: row;
@@ -421,4 +431,24 @@ h4{
   width: 65vw;
   margin: auto;
   text-align: center
+}
+
+.confidenceQuizButton {
+  background-color: cornflowerblue !important;
+  color: mintcream;
+  border: 3px mintcream;
+  font-size: 2.75vh;
+  margin-top: 2vh;
+  border-radius: 8vw;
+  outline: none;
+  padding: 1vh;
+  width: 70vw;
+  margin: auto;
+}
+
+
+.buttonWrap{
+  width: 70vw;
+  margin: auto;
+  padding-top: 2vh;
 }
