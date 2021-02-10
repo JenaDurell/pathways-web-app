@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Pathways.css';
-import { Router } from '@reach/router';
 
 export default function InflationCalc() {
   const [newValue, setnewValue] = useState(0);
@@ -21,6 +20,7 @@ export default function InflationCalc() {
     let initialAmt = document.querySelector('#initialAmt').value;
     if (initialAmt === '') return;
     
+   
     let initialYear = document.querySelector('#initialYear').value;
     
     let finalYear = document.querySelector('#finalYear').value;
@@ -29,7 +29,7 @@ export default function InflationCalc() {
    
     let newValue = (Math.round((initialAmt * 0.978 ** yearNum)*100)/100);
  
-    setnewValue(newValue);
+    setnewValue('$' + newValue);
   };
 
   const Clear = (e) => {
@@ -49,16 +49,16 @@ export default function InflationCalc() {
         <form id="calc">
           <ul className="form">
             <li>
-              <label for="initialAmt">Initial amount: &nbsp; &nbsp;   </label>
+              <label >Initial amount: &nbsp; &nbsp;   </label>
               <input type="text" id="initialAmt" placeholder="$0.00" />
             </li>
             <li>
-              <label for="initialYear">Initial Year:     </label>
-              <input type="text" id="initialYear" placeholder="2021" />
+              <label>Initial Year:     </label>
+              <input type="text" id="initialYear" placeholder="Enter Year" />
             </li>
             <li>
-              <label for="finalYear">Final year:         </label>
-              <input type="text" id="finalYear" placeholder="2030" />
+              <label >Final year:         </label>
+              <input type="text" id="finalYear" placeholder="Enter Year" />
             </li>
             <div id="button-holder">
               <button id="button2" onClick={calculate}>
@@ -68,7 +68,7 @@ export default function InflationCalc() {
             </div>
             <li className = 'newVal'>
             <input type="text" id="result" value={newValue} readOnly placeholder="$0.00" />
-            <label for="result" id="result">
+            <label  id="result">
               New Value
             </label>
             </li>

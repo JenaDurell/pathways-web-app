@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Pathways.css';
-import { Router } from '@reach/router';
 
 export default function CompoundInterestCalc() {
   const [newValueWith, setnewValueWith] = useState(0);
@@ -42,7 +41,6 @@ export default function CompoundInterestCalc() {
         let interestAccrued = (currentBalance + annualAdditions) * interestRate;
         
         currentBalance = currentBalance + interestAccrued +annualAdditions;
-        console.log('currentBalance', currentBalance);
         i++;
       }
       return Math.round(currentBalance * 100) /100;
@@ -60,14 +58,13 @@ export default function CompoundInterestCalc() {
         let ytgRemaining = yrsToGrow -i
         let totalAnnualWithInt =  annualAdditions * (1 + interestRate * ytgRemaining);
         fvAnnualContributions += totalAnnualWithInt 
-        console.log('fvAnnualContributions', fvAnnualContributions)
         i++
       }
       return (Math.round((fvAnnualContributions + fvInitialInv) * 100) /100) 
     }
 
-    setnewValueWith(newValueWith);
-    setnewValueWithout(newValueWithout);
+    setnewValueWith('$' + newValueWith);
+    setnewValueWithout('$' + newValueWithout);
   };
 
   const Clear = (e) => {
@@ -85,16 +82,16 @@ export default function CompoundInterestCalc() {
         <form id="calc">
           <ul className="form">
             <li>
-              <label for="initialInvestment">Initial investment:&nbsp;&nbsp; </label>
-              <input type="text" id="initialInvestmentInput" placeholder="$1000" />
+              <label>Initial investment:&nbsp;&nbsp; </label>
+              <input type="text" id="initialInvestmentInput" placeholder="$0" />
             </li>
             <li>
-              <label for="annualAdditions">Annual additions: </label>
-              <input type="text" id="annualAdditionsInput" placeholder="$100" />
+              <label>Annual additions: </label>
+              <input type="text" id="annualAdditionsInput" placeholder="$0" />
             </li>
             <li>
-              <label for="yrsToGrow">Years to grow: </label>
-              <input type="text" id="yrsToGrowInput" placeholder="10" />
+              <label>Years to grow: </label>
+              <input type="text" id="yrsToGrowInput" placeholder="0" />
             </li>
             <div id="button-holder">
               <button id="button2" onClick={calculate}>
@@ -102,7 +99,7 @@ export default function CompoundInterestCalc() {
               </button>
             </div>
             <li>
-              <label for="result" id="result1">
+              <label id="result1">
                 With Compounding:
               </label>
               <input
@@ -114,7 +111,7 @@ export default function CompoundInterestCalc() {
               />
             </li>
             <li>
-              <label for="result" id="result2">
+              <label id="result2">
                 No Compounding:
               </label>
               <input

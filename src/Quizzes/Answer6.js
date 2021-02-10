@@ -5,34 +5,42 @@ class Answer6 extends Component {
     answers: this.props.answers,
     guess: true,
     correctAnswer: this.props.correctAnswer,
-    
+    selectedAnswer: ''
   };
 
-  
   onAnswer = () => {
-   
     this.setState({
-
       guess: false,
-      
     });
   };
 
   render() {
     return (
-      <div id = 'answer2'>
+      <div id="answer2">
         {this.state.answers.map((ans, index) => {
-  if (this.state.guess) {
-    return <button id = 'quizButton' onClick={this.onAnswer} key={index}>{ans}</button>
-  } else {
-    if (ans === this.state.correctAnswer) {
-      return <button id="correct" key={index}>{ans}</button>
-    } else {
-      return <button id = 'quizButton'  key={index}>{ans}</button>
-    }
-  }
-})}
-        </div>
+          if (this.state.guess) {
+            return (
+              <button id="quizButton" onClick={this.onAnswer} key={index}>
+                {ans}
+              </button>
+            );
+          } else {
+            if (ans === this.state.correctAnswer) {
+              return (
+                <button id="correct" key={index}>
+                  {ans}
+                </button>
+              );
+            } else {
+              return (
+                <button id="quizButton" key={index}>
+                  {ans}
+                </button>
+              );
+            }
+          }
+        })}
+      </div>
     );
   }
 }
