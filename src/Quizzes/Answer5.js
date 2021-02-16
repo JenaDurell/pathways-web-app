@@ -5,12 +5,13 @@ class Answer5 extends Component {
     answers: this.props.answers,
     guess: true,
     correctAnswer: this.props.correctAnswer,
+    selectedAnswer: '',
   };
 
-  // Event on button
-  onAnswer = () => {
+  onAnswer = (ans) => {
     this.setState({
       guess: false,
+      selectedAnswer: ans,
     });
   };
 
@@ -20,20 +21,41 @@ class Answer5 extends Component {
         {this.state.answers.map((ans, index) => {
           if (this.state.guess) {
             return (
-              <button id="quizButton" onClick={this.onAnswer} key={index}>
+              <button
+                className="quizButton"
+                onClick={() => this.onAnswer(ans)}
+                key={index}
+              >
                 {ans}
               </button>
             );
           } else {
             if (ans === this.state.correctAnswer) {
               return (
-                <button id="correct" key={index}>
+                <button className="correct" key={index}>
+                  {ans}
+                </button>
+              );
+            } else if (
+              this.state.selectedAnswer === ans &&
+              this.state.correctAnswer !== ans
+            ) {
+              <button className="incorrect" key={index}>
+                {ans}
+              </button>;
+
+              return (
+                <button className="incorrect" key={index}>
                   {ans}
                 </button>
               );
             } else {
               return (
-                <button id="quizButton" key={index}>
+                <button
+                  className="quizButton"
+                 
+                  key={index}
+                >
                   {ans}
                 </button>
               );
@@ -44,5 +66,4 @@ class Answer5 extends Component {
     );
   }
 }
-
 export default Answer5;
