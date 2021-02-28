@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Pathways.css';
 import Quiz9 from '../Quizzes/Quiz9';
 import Quiz10 from '../Quizzes/Quiz10';
@@ -13,6 +13,9 @@ import FinishMiniFirstInvestPath from '../Components/FinishMiniFirstInvestPath';
 import { Link } from '@reach/router';
 
 export default function Securities(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/firstInvestingMap">
@@ -31,7 +34,7 @@ export default function Securities(props) {
           <br></br>
           <br></br>
           Securities are <b>tradable financial assets </b>that hold monetary
-          value. All securities must follow the regualtions of{' '}
+          value. All securities must follow the regulations of{' '}
           <b> federal and state laws.</b>
           <br></br>
           <br></br>

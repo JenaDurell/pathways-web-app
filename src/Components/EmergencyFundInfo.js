@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Pathways.css';
 import sosAlarm from '../images/sosAlarm.png';
 import treeOncar from '../images/treeOnCar.png';
@@ -12,6 +12,9 @@ import FinishMiniEmergencyPath from './FinishMiniEmergencyPath'
 import { Link } from '@reach/router'
 
 export default function EmergencyFundInfo(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/emergencyFundMap">
@@ -95,10 +98,10 @@ export default function EmergencyFundInfo(props) {
           the next few months by adjusting her spending plan.
           <br></br>
           <br></br>
-          Jess was relieved that she could solve her computer crisis{' '}
+          Jess is relieved that she can solve her computer crisis{' '}
           <b>quickly</b> and <b>stress-free.</b> What about Mark?
           <img id="icons" src={shopping} alt="shopping" />
-          Mark does not have an emergency fund so he used a <b>credit card.</b>
+          Mark does not have an emergency fund so he uses a <b>credit card.</b>
           <br></br>
           <br></br>
           He does not have a lot of credit history, so his interest rate is{' '}
@@ -115,10 +118,7 @@ export default function EmergencyFundInfo(props) {
         <b>There when you need it.</b>
       
       <div id="info">
-        Now you can see how <b>important it is to have an emergency fund</b> as
-        a student.
-        <br></br>
-        <br></br>
+       
         After college, <b>emergency funds need to be larger</b> as the
         consequences can be more severe.
         <br></br>

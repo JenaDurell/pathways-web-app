@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import ConfidenceQuestionData from './data14ConfidenceQuestionData'
-import ConfidenceAnswer from "./ConfidenceAnswer";
+import KnowledgeQuestionData from './data15KnowledgeQuestionData'
+import KnowledgeAnswer from "./KnowledgeAnswer";
 
 
-class ConfidenceQuestion extends Component{
+class KnowledgeQuestion extends Component{
 
   
   
@@ -17,7 +17,7 @@ class ConfidenceQuestion extends Component{
 
   this.setState( {
 
-    quizInfo : ConfidenceQuestionData
+    quizInfo : KnowledgeQuestionData
 
   })
 }
@@ -38,7 +38,7 @@ class ConfidenceQuestion extends Component{
             
           return <div> 
                      <span id = 'confidenceText'>{data.quiz}</span>
-                     <ConfidenceAnswer answers={data.answers} />
+                     <KnowledgeAnswer answers={data.answers} />
               
                  </div>
           })
@@ -49,7 +49,4 @@ class ConfidenceQuestion extends Component{
   }
 }
 
-export default ConfidenceQuestion;
-
-
-
+export default KnowledgeQuestion;

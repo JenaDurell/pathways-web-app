@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Pathways.css';
 import bucks from '../imagesInvesting/bucks.png';
 import sleep from '../imagesInvesting/sleep.png';
@@ -7,6 +7,9 @@ import FinishMiniFirstInvestPath from '../Components/FinishMiniFirstInvestPath';
 import { Link } from '@reach/router';
 
 export default function WhatIsInvesting(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/firstInvestingMap">

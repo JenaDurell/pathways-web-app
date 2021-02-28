@@ -13,6 +13,7 @@ import PathwaysHome from './Components/PathwaysHome';
 import EmergencyFundMap from './Components/EmergencyFundMap';
 import FirstInvestingMap from './Components/FirstInvestingMap';
 import ConfidenceLevel from './Components/ConfidenceLevel';
+import KnowledgeLevel from './Components/KnowledgeLevel'
 
 export default class App extends Component {
   constructor(props) {
@@ -47,6 +48,7 @@ export default class App extends Component {
           <Securities path="/securities" />
           <StockMarket path="/stockMarket" />
           <ConfidenceLevel path="/confidenceLevel" />
+          <KnowledgeLevel path = '/knowledgeLevel' />
         </Router>
       </div>
     );

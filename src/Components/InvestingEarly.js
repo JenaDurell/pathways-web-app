@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Pathways.css';
 import CompoundInterestCalc from './CompoundInterestCalc';
 import Quiz7 from '../Quizzes/Quiz7';
@@ -12,6 +12,9 @@ import FinishMiniFirstInvestPath from '../Components/FinishMiniFirstInvestPath';
 import { Link } from '@reach/router';
 
 export default function InvestingEarly(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/firstInvestingMap">

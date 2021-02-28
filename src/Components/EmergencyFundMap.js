@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from '@reach/router';
 import '../styles/Pathways.css';
 import mapLoveBucks from '../imagesMap/mapLoveBucks.png';
@@ -6,6 +6,9 @@ import mapCreditAndCoin from '../imagesMap/mapCreditAndCoin.png';
 import mapBlueGraph from '../imagesMap/mapBlueGraph.png';
 
 function EmergencyFundMap() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/pathwaysHome">
@@ -27,6 +30,7 @@ function EmergencyFundMap() {
             />
           </Link>
           <h5> What is an emergency fund?</h5>
+          
         </div>
         <div id="emergencyFundSize">
           <Link to="/emergencyFundSize">

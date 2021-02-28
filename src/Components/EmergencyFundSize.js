@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Pathways.css';
 import Quiz3 from '../Quizzes/Quiz3';
 import Quiz4 from '../Quizzes/Quiz4';
@@ -11,6 +11,9 @@ import FinishMiniEmergencyPath from './FinishMiniEmergencyPath';
 import { Link } from '@reach/router';
 
 export default function EmergencyFundSize(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/emergencyFundMap">
@@ -49,7 +52,7 @@ export default function EmergencyFundSize(props) {
           <b>vary depending on the person.</b>
           <br></br>
           <br></br>
-          If you have a lot of <b>debt</b> or if you have a history of{' '}
+          If you have a lot of <b>fixed discretionary expenses</b> or if you have a history of{' '}
           <b>medical issues</b> then it would be good to have a larger emergency
           fund.
           <br></br>

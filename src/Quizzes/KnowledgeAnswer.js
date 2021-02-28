@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { navigate } from "@reach/router"
+import { Link } from '@reach/router'
 
-
-class ConfidenceAnswer extends Component {
+class KnowledgeAnswer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -26,25 +25,24 @@ class ConfidenceAnswer extends Component {
     let answerObj = {
       data: {
         uid: userId,
-        quizId: 'confidenceLevel',
+        quizId: 'knowledgeLevel',
         answerId: answerText,
       },
     };
 
     await axios
       .post(
-        'https://us-central1-finsiteful.cloudfunctions.net/savePathwaysAnswer-savePathwaysAnswer ',
+       ' https://us-central1-finsiteful.cloudfunctions.net/savePathwaysAnswer-savePathwaysAnswer ',
         // 'http://localhost:5001/finsiteful/us-central1/savePathwaysAnswer-savePathwaysAnswer',
         answerObj
       )
       .then((res) => {
         console.log(res);
+        
       })
       .catch(function (error) {
         console.log(error);
       });
-      console.log("boout to nav")
-      navigate(`/knowledgeLevel?uid=${userId}`)
   };
 
   render() {
@@ -69,4 +67,4 @@ class ConfidenceAnswer extends Component {
     );
   }
 }
-export default ConfidenceAnswer;
+export default KnowledgeAnswer;

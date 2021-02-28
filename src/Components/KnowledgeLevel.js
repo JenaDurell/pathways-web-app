@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Pathways.css';
-import ConfidenceQuestion from '../Quizzes/ConfidenceQuestion';
+import KnowledgeQuestion from '../Quizzes/KnowledgeQuestion';
 
-class ConfidenceLevel extends React.Component {
+class KnowledgeLevel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -18,13 +18,13 @@ class ConfidenceLevel extends React.Component {
   render() {
     return (
       <div id = 'condifence'>
-        <ConfidenceQuestion />
+        <KnowledgeQuestion />
 
         <div id="confidenceBottom">
-         FinSiteful helps you grow your skills and your confidence!
+         FinSiteful helps you grow your knowledge!
         </div>
       </div>
     );
   }
 }
-export default ConfidenceLevel;
+export default KnowledgeLevel;

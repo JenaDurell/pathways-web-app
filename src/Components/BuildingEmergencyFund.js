@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CheckList from './CheckList';
 import '../styles/Pathways.css';
 import phoneDollerSign from '../images/phoneDollerSign.png';
@@ -8,6 +8,9 @@ import blueGraph from '../images/blueGraph.png';
 import { Link } from '@reach/router';
 
 export default function BuildingEmergencyFund(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/emergencyFundMap">
@@ -65,7 +68,7 @@ export default function BuildingEmergencyFund(props) {
         </div>
         <img id="icons" src={winner} alt="winner" />
         <div id="info">
-          Getting into the habit of regualrly saving money is critical. It's the
+          Getting into the habit of regularly saving money is critical. It's the
           little things that make the big difference!
           <br></br>
           <br></br>

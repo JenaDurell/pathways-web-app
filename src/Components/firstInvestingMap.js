@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from '@reach/router';
 import '../styles/Pathways.css';
 import mapPurpleGraph from '../imagesMap/mapPurpleGraph.png';
@@ -8,6 +8,9 @@ import mapBlueGraph from '../imagesMap/mapBlueGraph.png';
 import mapSecurities from '../imagesMap/mapSecurities.png';
 
 function FirstInvestingMap() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/pathwaysHome">
@@ -18,7 +21,7 @@ function FirstInvestingMap() {
 
       <div id="investing1Map">
       <div className="section">
-        <b>Investing 1</b>
+        <b>Investing 101</b>
       </div>
         <div id="whatIsInvesting">
           <Link to="/whatIsInvesting">

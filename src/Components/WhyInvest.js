@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Pathways.css';
 import InflationCalc from './InflationCalc';
 import Quiz5 from '../Quizzes/Quiz5';
@@ -10,6 +10,9 @@ import FinishMiniFirstInvestPath from '../Components/FinishMiniFirstInvestPath';
 import { Link } from '@reach/router';
 
 export default function WhyInvest(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/firstInvestingMap">
@@ -40,7 +43,7 @@ export default function WhyInvest(props) {
         <div id="info">
           Inflation is a rise of the prices of goods and services which leads to
           a <b>decrease in purchasing power.</b> Since 1990, the inflation rate
-          has been on average <b>2.4%.</b>
+          has been on average <b>2.4% annually.</b>
           <br></br>
           <br></br>
           This means that the purchasing power of money decreases by <b>
@@ -55,7 +58,7 @@ export default function WhyInvest(props) {
         <div id="info">
           Assuming the value of money decreases by <b>2.4%</b> every year, every{' '}
           <b>$100</b> bill that you might have in your wallet this year will
-          only be worth <b>$78.89</b> in 10 years.
+          only be worth <b>$78.43</b> in 10 years.
           <br></br>
           <br></br>
           <InflationCalc />

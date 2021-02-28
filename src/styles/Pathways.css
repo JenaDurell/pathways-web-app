@@ -24,15 +24,7 @@ html, body {
   margin-top: 2vh;
 }
 
-#confidenceText{
-  font-size: 2.75vh;
-  margin-top: 2vh;
-}
-#confidenceSubText{
-  font-size: 2vh;
-  margin-top: 3vh;
 
-}
 
 #icons {
   display: flex;
@@ -353,6 +345,7 @@ input[type="image" i]{
 
 h5{
   font-size: 6vw;
+  padding-bottom: 3.5vh;
   }
 
 h4{
@@ -445,16 +438,47 @@ h4{
 }
 
 .confidenceQuizButton {
-  background-color: cornflowerblue !important;
+  background-color: #48bfe3!important;
   color: mintcream;
   border: 3px mintcream;
-  font-size: 2.75vh;
+  font-size: 3.4vh;
   margin-top: 2vh;
-  border-radius: 8vw;
+  border-radius: 9px 9px 9px 9px;
   outline: none;
   padding: 1vh;
   width: 70vw;
   margin: auto;
+}
+
+#confidence{
+  padding-top: 6.5vh;
+  width: 70vw;
+  margin: auto;
+  font-size: 3.25vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#confidenceBottom{
+  
+  padding-top: 1vh;
+  padding-bottom:1vh;
+  width: 70vw;
+  margin: auto;
+  font-size: 3.25vh;
+  margin-top: 3vh;
+}
+
+#confidenceText{
+  font-size: 3.25vh;
+ margin-top: 2vh;
+ padding-bottom: 3vh;
+}
+#confidenceSubText{
+ font-size: 2.5vh;
+ margin-top: 3vh;
+
 }
 
 

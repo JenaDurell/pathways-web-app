@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Pathways.css';
 import Quiz13 from '../Quizzes/Quiz13';
 import bank from '../imagesInvesting/bank.png';
@@ -7,6 +7,9 @@ import FinishInvesting from './FinishInvesting';
 import { Link } from '@reach/router';
 
 export default function StockMarket(props) {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Link to="/firstInvestingMap">

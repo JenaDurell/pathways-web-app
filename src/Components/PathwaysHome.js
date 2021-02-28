@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from '@reach/router';
 import '../styles/Pathways.css';
 import mapLoveBucks from '../imagesMap/mapLoveBucks.png';
 import mapPurpleGraph from '../imagesMap/mapPurpleGraph.png'
 
 function PathwaysHome() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
 
@@ -29,7 +32,7 @@ function PathwaysHome() {
               alt="investingGraph"
               />
           </Link>
-              <h5>Investing 1</h5>
+              <h5>Investing 101</h5>
         </div>
       </div>
     <h4>More to come!</h4>

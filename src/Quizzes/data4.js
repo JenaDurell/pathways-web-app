@@ -6,7 +6,7 @@ let quizData4 = [
     answers: [
       'a) Do you shop a lot?',
       'b) Do you have debt?',
-      'c) Do you havce a history of medical issues?',
+      'c) Do you have a history of medical issues?',
       'd) Do you have a car?',
       'e) b, c, & d',
     ],
