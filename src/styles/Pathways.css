@@ -6,9 +6,10 @@
   padding-top: 2vh;
 }
 
-html, body {
-   margin-top: 0; 
-  }
+html,
+body {
+  margin-top: 0;
+}
 
 #placeholder {
   height: 4vh;
@@ -16,31 +17,28 @@ html, body {
 
 .section {
   font-size: 4.75vh;
-  margin-top: 3vh
-  
+  margin-top: 3vh;
 }
 #info {
   font-size: 3vh;
   margin-top: 2vh;
 }
 
-
-
 #icons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 90vw;
- }
-
-
-ul {
-  list-style-type:none;
-  font-size: 3vh;
-  padding: 0
+  margin: auto;
 }
 
-li{
+ul {
+  list-style-type: none;
+  font-size: 3vh;
+  padding: 0;
+}
+
+li {
   padding-bottom: 2vh;
   font-size: 3vh;
   display: flex;
@@ -49,54 +47,50 @@ li{
   /* margin: 2vw; */
 }
 
-#checkbox{
+#checkbox {
   color: gray;
   height: 4vw;
   width: 4vw;
-  
 }
 
-#calc{
-  background-color: rgb(111,207,151,1);
+#calc {
+  background-color: rgb(111, 207, 151, 1);
   color: mintcream;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#initialAmt{
-  background-color:rgb(172, 171, 171);  
-  color:mintcream ;
-  font-size: 3vh;
-  width: 30vw;
-  border: 0;
-
-}
-
-
-#initialYear{
-  background-color:rgb(172, 171, 171);
+#initialAmt {
+  background-color: rgb(172, 171, 171);
   color: mintcream;
   font-size: 3vh;
   width: 30vw;
   border: 0;
-
 }
 
-#finalYear{
-  background-color:rgb(172, 171, 171);
-  color:mintcream;
+#initialYear {
+  background-color: rgb(172, 171, 171);
+  color: mintcream;
   font-size: 3vh;
   width: 30vw;
   border: 0;
 }
 
-#button-holder{
+#finalYear {
+  background-color: rgb(172, 171, 171);
+  color: mintcream;
+  font-size: 3vh;
+  width: 30vw;
+  border: 0;
+}
+
+#button-holder {
   width: 26vw;
   margin: auto;
 }
 
-#button2{
+#button2 {
   background-color: cornflowerblue;
   color: mintcream;
   border: 3px mintcream;
@@ -107,123 +101,114 @@ li{
   display: flex;
   align-items: center;
   justify-content: center;
-  }
-#backButton{
+}
+#backButton {
   text-decoration: none !important;
-  color:blue;
+  color: blue;
   background-color: white;
   border: 0px;
   font-size: 3vh;
   padding-top: 2vh;
 }
-.newVal{
+.newVal {
   padding-top: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: mintcream
+  color: mintcream;
 }
 
-#result{
+#result {
   text-align: center;
-  background-color: rgb(111,207,151,1);
+  background-color: rgb(111, 207, 151, 1);
   color: mintcream !important;
   font-size: 3vh;
   width: 40vw;
   border: 0;
 }
 
-input::-webkit-input-placeholder{
-  color: mintcream ;
+input::-webkit-input-placeholder {
+  color: mintcream;
 }
 input:-moz-placeholder {
-  color: mintcream ;
+  color: mintcream;
 }
 
-
-#initialInvestment{
-  background-color:rgb(237, 237, 237);
+#initialInvestment {
+  background-color: rgb(237, 237, 237);
   color: mintcream;
   font-size: 3vh;
   width: 30vw;
-
 }
 
-#initialInvestmentInput{
-  background-color:rgb(172, 171, 171);  
-  color:mintcream ;
+#initialInvestmentInput {
+  background-color: rgb(172, 171, 171);
+  color: mintcream;
   font-size: 2.75vh;
   width: 22vw;
   border: 0;
-
 }
 
-#annualAdditions{
-  background-color:rgb(237, 237, 237);
+#annualAdditions {
+  background-color: rgb(237, 237, 237);
   color: mintcream;
   font-size: 3vh;
   width: 30vw;
   border: 0;
-
 }
 
-#annualAdditionsInput{
-  background-color:rgb(172, 171, 171);  
-  color:mintcream ;
+#annualAdditionsInput {
+  background-color: rgb(172, 171, 171);
+  color: mintcream;
   font-size: 2.75vh;
   width: 22vw;
   border: 0;
-
 }
 
-
-
-#yrsToGrowInput{
-  background-color:rgb(172, 171, 171);  
-  color:mintcream ;
+#yrsToGrowInput {
+  background-color: rgb(172, 171, 171);
+  color: mintcream;
   font-size: 2.75vh;
   width: 22vw;
-  border: 0
-
+  border: 0;
 }
 
-#result1{
+#result1 {
   text-align: center;
-  background-color: rgb(111,207,151,1);
+  background-color: rgb(111, 207, 151, 1);
   color: mintcream;
   font-size: 2.75vh;
   width: 25vw;
-  border: 0
+  border: 0;
 }
 
-#result2{
+#result2 {
   text-align: center;
-  background-color: rgb(111,207,151,1);
+  background-color: rgb(111, 207, 151, 1);
   color: mintcream;
   font-size: 2.75vh;
   width: 25vw;
-  border: 0
+  border: 0;
 }
 
 #quiz {
   font-size: 4.25vh;
   font-weight: bold;
   margin-top: 2vh;
-  display: block,
-  
+  display: block;
 }
-.correct{
-  background-color: rgb(111,207,151,1) !important ;
+.correct {
+  background-color: rgb(111, 207, 151, 1) !important ;
   color: mintcream;
-  border:0;
+  border: 0;
   font-size: 2.75vh;
   margin-top: 2vh;
   border-radius: 7vw;
   outline: none;
-  padding: 1vh
+  padding: 1vh;
 }
 
-.incorrect{
+.incorrect {
   background-color: white;
   color: black;
   border: 0.5vh solid red;
@@ -231,19 +216,18 @@ input:-moz-placeholder {
   margin-top: 2vh;
   border-radius: 7vw;
   outline: none;
-  padding: 1vh
+  padding: 1vh;
 }
 
-#answer2{
+#answer2 {
   display: flex;
   flex-direction: column;
 }
 
-#two-answer-btn{
+#two-answer-btn {
   width: 85vw;
   display: flex;
   justify-content: space-around;
-  
 }
 
 .quizButton {
@@ -253,14 +237,14 @@ input:-moz-placeholder {
   margin-top: 2vh;
   border-radius: 7vw;
   outline: none;
-  padding: 1vh
+  padding: 1vh;
 }
 
-#question{
+#question {
   font-size: 3.5vh;
 }
 
-#finish{
+#finish {
   background-color: white;
   color: black;
   font-size: 2.75vh;
@@ -275,10 +259,10 @@ input:-moz-placeholder {
 }
 
 a:link {
- text-decoration: none;
+  text-decoration: none;
 }
 
-#done{
+#done {
   background-color: cornflowerblue;
   color: mintcream;
   font-size: 3.5vh;
@@ -288,83 +272,81 @@ a:link {
   border: 0;
 }
 
-#done-wrap{
+#done-wrap {
   width: 85vw;
   display: flex;
   justify-content: space-around;
 }
 
-.loveBucksIcon{
-  width: 47vw
-}
-
-.mapIcons{
+.loveBucksIcon {
   width: 47vw;
-  
 }
 
-#emergencyFundMap{
+.mapIcons {
+  width: 47vw;
+}
+
+#emergencyFundMap {
   padding-top: 3vh;
   flex-direction: column;
   justify-content: center;
   width: 95vw;
-  margin:auto;
-  text-align: center;
-}
-
-#emergencyFundInfo{
-  flex-direction: column;
-  justify-items: center;
-  width: 65vw;
   margin: auto;
   text-align: center;
 }
 
-#emergencyFundSize{
+#emergencyFundInfo {
   flex-direction: column;
   justify-items: center;
   width: 65vw;
   margin: auto;
-  text-align: center
- }
-
-#buildingEmergencyFund{
-  flex-direction: column;
-  justify-items: center;
-  width: 65vw;
-  margin: auto;
-  text-align: center
+  text-align: center;
 }
 
-input[type="image" i]{
+#emergencyFundSize {
+  flex-direction: column;
+  justify-items: center;
+  width: 65vw;
+  margin: auto;
+  text-align: center;
+}
+
+#buildingEmergencyFund {
+  flex-direction: column;
+  justify-items: center;
+  width: 65vw;
+  margin: auto;
+  text-align: center;
+}
+
+input[type='image' i] {
   margin-top: -1em;
   margin-right: -1em;
   margin-bottom: -2em;
 }
 
-
-h5{
+h5 {
   font-size: 6vw;
   padding-bottom: 3.5vh;
-  }
+}
 
-h4{
+h4 {
   padding-top: 4vh;
   font-size: 6vw;
-  margin:auto;
+  margin: auto;
   text-align: center;
 }
 
-#pathwaysMap{
+#pathwaysMap {
   padding-top: 3vh;
   flex-direction: column;
   justify-content: center;
   width: 95vw;
-  margin:auto;
+  margin: auto;
   text-align: center;
 }
 
-#toEmergencyFund{
+#toEmergencyFund {
   flex-direction: column;
   justify-items: center;
   width: 65vw;
@@ -373,26 +355,25 @@ h4{
   padding-top: 3vh;
 }
 
-#toInvesting1{
+#toInvesting1 {
   padding-top: 3vh;
   flex-direction: column;
   justify-items: center;
   width: 65vw;
   margin: auto;
-  text-align: center
+  text-align: center;
 }
 
-#investing1Map{
+#investing1Map {
   padding-top: 3vh;
   flex-direction: column;
   justify-content: center;
   width: 95vw;
-  margin:auto;
+  margin: auto;
   text-align: center;
-
 }
 
-#whatIsInvesting{
+#whatIsInvesting {
   flex-direction: column;
   justify-items: center;
   width: 65vw;
@@ -401,44 +382,44 @@ h4{
   padding-top: 4vh;
 }
 
-#whyInvest{
+#whyInvest {
   padding-top: 3vh;
   flex-direction: column;
   justify-items: center;
   width: 65vw;
   margin: auto;
-  text-align: center
+  text-align: center;
 }
 
-#investingEarly{
+#investingEarly {
   padding-top: 3vh;
   flex-direction: column;
   justify-items: center;
   width: 65vw;
   margin: auto;
-  text-align: center
+  text-align: center;
 }
 
-#securities{
+#securities {
   padding-top: 3vh;
   flex-direction: column;
   justify-items: center;
   width: 65vw;
   margin: auto;
-  text-align: center
+  text-align: center;
 }
 
-#stockMarket{
+#stockMarket {
   padding-top: 3vh;
   flex-direction: column;
   justify-items: center;
   width: 65vw;
   margin: auto;
-  text-align: center
+  text-align: center;
 }
 
 .confidenceQuizButton {
-  background-color: #48bfe3!important;
+  background-color: #48bfe3 !important;
   color: mintcream;
   border: 3px mintcream;
   font-size: 3.4vh;
@@ -450,7 +431,7 @@ h4{
   margin: auto;
 }
 
-#confidence{
+#confidence {
   padding-top: 6.5vh;
   width: 70vw;
   margin: auto;
@@ -460,30 +441,58 @@ h4{
   justify-content: center;
   align-items: center;
 }
-#confidenceBottom{
-  
+#confidenceBottom {
   padding-top: 1vh;
-  padding-bottom:1vh;
+  padding-bottom: 1vh;
   width: 70vw;
   margin: auto;
   font-size: 3.25vh;
   margin-top: 3vh;
 }
 
-#confidenceText{
+#confidenceText {
   font-size: 3.25vh;
- margin-top: 2vh;
- padding-bottom: 3vh;
+  margin-top: 2vh;
+  padding-bottom: 3vh;
 }
-#confidenceSubText{
- font-size: 2.5vh;
- margin-top: 3vh;
-
+#confidenceSubText {
+  font-size: 2.5vh;
+  margin-top: 3vh;
 }
 
-
-.buttonWrap{
+.buttonWrap {
   width: 70vw;
   margin: auto;
   padding-top: 2vh;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 100%;
+  background-color:mintcream;
+  color:  #48bfe3 !important;
+  padding: 2%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.modal_content {
+  background-color:mintcream;
+  color:  #48bfe3 !important;
+  width: 70vw;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

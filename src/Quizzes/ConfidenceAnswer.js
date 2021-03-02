@@ -34,7 +34,7 @@ class ConfidenceAnswer extends Component {
     await axios
       .post(
         'https://us-central1-finsiteful.cloudfunctions.net/savePathwaysAnswer-savePathwaysAnswer ',
-        // 'http://localhost:5001/finsiteful/us-central1/savePathwaysAnswer-savePathwaysAnswer',
+       
         answerObj
       )
       .then((res) => {

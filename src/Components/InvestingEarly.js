@@ -3,7 +3,7 @@ import '../styles/Pathways.css';
 import CompoundInterestCalc from './CompoundInterestCalc';
 import Quiz7 from '../Quizzes/Quiz7';
 import Quiz8 from '../Quizzes/Quiz8';
-import dolla from '../imagesInvesting/dolla.png';
+import dollaBill from '../imagesInvesting/dollaBill.jpg';
 import tinyToes from '../imagesInvesting/tinyToes.png';
 import arrowUpChart from '../imagesInvesting/arrowUpChart.png';
 import gardenGirl from '../imagesInvesting/gardenGirl.png';
@@ -43,7 +43,7 @@ export default function InvestingEarly(props) {
           In fact, it is actually better to <b>start small. </b>Starting small
           allows you to learn about the process of investing to figure out what{' '}
           <b>works for you, </b>while not being too worried about the effects.
-          <img id="icons" src={dolla} alt="dolla" />
+          <img id="icons" src={dollaBill} alt="dollaBill" />
           With the recent emergence of digital investment platforms, you can
           even <b>invest as little as $1.</b>
         </div>

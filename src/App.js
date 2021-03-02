@@ -14,6 +14,7 @@ import EmergencyFundMap from './Components/EmergencyFundMap';
 import FirstInvestingMap from './Components/FirstInvestingMap';
 import ConfidenceLevel from './Components/ConfidenceLevel';
 import KnowledgeLevel from './Components/KnowledgeLevel'
+import SoloConfidence from './Components/SoloConfidence'
 
 export default class App extends Component {
   constructor(props) {
@@ -49,6 +50,7 @@ export default class App extends Component {
           <StockMarket path="/stockMarket" />
           <ConfidenceLevel path="/confidenceLevel" />
           <KnowledgeLevel path = '/knowledgeLevel' />
+          <SoloConfidence path = '/soloConfidence' />
         </Router>
       </div>
     );
