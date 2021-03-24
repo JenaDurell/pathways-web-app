@@ -1,0 +1,67 @@
+#display{
+    padding-top: 4vh; 
+    width: 90vw;
+    /* height: 95vh; */
+    margin: auto !important;
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+  justify-content: flex-end;
+    flex-direction: column;
+}
+
+.facts-header{
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    font-size: 4vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    
+}
+.facts{
+    font-size: 4vh;
+    margin-top: 3vh;
+    width:70vw;
+    margin: auto;
+    text-decoration: underline;
+   font-weight:800;
+   text-align: center;
+}
+#fact-display{
+    font-size: 3vh;
+    margin-top: 3vh;
+    width: 90vw;
+    margin: auto;
+}
+
+
+.word-of-the-day{
+    font-size: 3.5vh;
+    margin-top: 3vh;
+    width:70vw;
+    margin: auto;
+    text-decoration: underline;
+   font-weight:800;
+   text-align: center;
+   padding-bottom: 2vh;
+}
+.word{
+    background-color: #48bfe3 !important;
+    color:solid black;
+    border: 3px mintcream;
+    font-size: 3.4vh;
+    margin-top: 5vh;
+    border-radius: 9px 9px 9px 9px;
+    outline: none;
+    padding: 1vh;
+    width: 70vw;
+    margin: auto;
+    text-align: center; 
+}
+
+.word-display{
+    padding-top: 5vh;
+    flex-basis:auto
+}

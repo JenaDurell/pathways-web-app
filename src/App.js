@@ -15,6 +15,9 @@ import FirstInvestingMap from './Components/FirstInvestingMap';
 import ConfidenceLevel from './Components/ConfidenceLevel';
 import KnowledgeLevel from './Components/KnowledgeLevel'
 import SoloConfidence from './Components/SoloConfidence'
+import FactOfTheDay from './Components/FactOfTheDay'
+import WordOfTheDay from './Components/WordOfTheDay'
+import QuizOfTheDay from './Components/QuizOfTheDay'
 
 export default class App extends Component {
   constructor(props) {
@@ -51,6 +54,9 @@ export default class App extends Component {
           <ConfidenceLevel path="/confidenceLevel" />
           <KnowledgeLevel path = '/knowledgeLevel' />
           <SoloConfidence path = '/soloConfidence' />
+          <FactOfTheDay path = '/factOfTheDay' />
+          <WordOfTheDay path = '/wordOfTheDay' />
+          <QuizOfTheDay path = '/quizOfTheDay' />
         </Router>
       </div>
     );

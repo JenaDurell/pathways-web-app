@@ -1,15 +1,17 @@
 import React, { Component } from "react";
-import quizData3 from "./data3";
-import Answer3 from "./Answer3";
+import QuizAnswerDisplay from "./QuizAnswerDisplay";
+import quizContent from "./quizContent";
 
-class Quiz3 extends Component {
+class QuizQuestionDisplay extends Component {
   state = {
     quizInfo: [],
   };
 
   setQuiz = () => {
+    console.log([quizContent[4]]);
+
     this.setState({
-      quizInfo: quizData3,
+      quizInfo: [quizContent[4]],
     });
   };
 
@@ -23,10 +25,8 @@ class Quiz3 extends Component {
         {this.state.quizInfo.map((data) => {
           return (
             <div>
-              <span id="question">
-                <b>{data.quiz}</b>
-              </span>
-              <Answer3
+              <span id="question">{data.quiz}</span>
+              <QuizAnswerDisplay
                 correctAnswer={data.correctAnswer}
                 answers={data.answers}
               />
@@ -38,4 +38,4 @@ class Quiz3 extends Component {
   }
 }
 
-export default Quiz3;
+export default QuizQuestionDisplay;
