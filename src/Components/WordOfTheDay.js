@@ -10,8 +10,9 @@ export default function WordOfTheDay(props) {
   }, []);
   return (
     <div id="display">
-      
-        <img id="icons" src={logo} alt="Finsiteful Logo" />
+      <div id= 'logo-wrap'>
+        <img id="logo" src={logo} alt="Finsiteful Logo" />
+        </div>
         <div className="word-of-the-day">Word of the Day</div>
         <div id="info">
           <WordDisplay />

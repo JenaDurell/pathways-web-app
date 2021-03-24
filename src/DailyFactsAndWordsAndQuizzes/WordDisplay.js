@@ -7,7 +7,7 @@ class WordDisplay extends Component{
 
     this.state = {
         data: words,
-        index: [0]
+        index: [8]
       };
     }
     componentDidMount() {

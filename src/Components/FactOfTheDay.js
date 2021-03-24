@@ -12,7 +12,9 @@ export default function FactOfTheDay(props) {
 
         <div id = 'display'>
         <div className="facts-header">
-        <img id='icons' src={logo} alt="Finsiteful Logo" />
+        <div id= 'logo-wrap'>
+        <img id='logo' src={logo} alt="Finsiteful Logo" />
+       </div>
         <div className="facts">
 
          Fact of the Day

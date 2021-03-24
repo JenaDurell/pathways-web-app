@@ -1,30 +1,31 @@
-import React, { Component } from 'react';
-import './styles/styles.css';
-import { Router } from '@reach/router';
-import EmergencyFundInfo from './Components/EmergencyFundInfo';
-import EmergencyFundSize from './Components/EmergencyFundSize';
-import BuildingEmergencyFund from './Components/BuildingEmergencyFund';
-import WhatIsInvesting from './Components/WhatIsInvesting';
-import WhyInvest from './Components/WhyInvest';
-import InvestingEarly from './Components/InvestingEarly';
-import Securities from './Components/Securities';
-import StockMarket from './Components/StockMarket';
-import PathwaysHome from './Components/PathwaysHome';
-import EmergencyFundMap from './Components/EmergencyFundMap';
-import FirstInvestingMap from './Components/FirstInvestingMap';
-import ConfidenceLevel from './Components/ConfidenceLevel';
-import KnowledgeLevel from './Components/KnowledgeLevel'
-import SoloConfidence from './Components/SoloConfidence'
-import FactOfTheDay from './Components/FactOfTheDay'
-import WordOfTheDay from './Components/WordOfTheDay'
-import QuizOfTheDay from './Components/QuizOfTheDay'
+import React, { Component } from "react";
+import "./styles/styles.css";
+import { Router } from "@reach/router";
+import EmergencyFundInfo from "./Components/EmergencyFundInfo";
+import EmergencyFundSize from "./Components/EmergencyFundSize";
+import BuildingEmergencyFund from "./Components/BuildingEmergencyFund";
+import WhatIsInvesting from "./Components/WhatIsInvesting";
+import WhyInvest from "./Components/WhyInvest";
+import InvestingEarly from "./Components/InvestingEarly";
+import Securities from "./Components/Securities";
+import StockMarket from "./Components/StockMarket";
+import PathwaysHome from "./Components/PathwaysHome";
+import EmergencyFundMap from "./Components/EmergencyFundMap";
+import FirstInvestingMap from "./Components/FirstInvestingMap";
+import ConfidenceLevel from "./Components/ConfidenceLevel";
+import KnowledgeLevel from "./Components/KnowledgeLevel";
+import SoloConfidence from "./Components/SoloConfidence";
+import FactOfTheDay from "./Components/FactOfTheDay";
+import WordOfTheDay from "./Components/WordOfTheDay";
+import QuizOfTheDay from "./Components/QuizOfTheDay";
+import CreditScores from "./Components/CreditScores";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      uid: '',
+      uid: "",
     };
   }
 
@@ -33,7 +34,7 @@ export default class App extends Component {
 
     let search = window.location.search;
     let params = new URLSearchParams(search);
-    this.uid = params.get('uid');
+    this.uid = params.get("uid");
   }
 
   render() {
@@ -52,11 +53,12 @@ export default class App extends Component {
           <Securities path="/securities" />
           <StockMarket path="/stockMarket" />
           <ConfidenceLevel path="/confidenceLevel" />
-          <KnowledgeLevel path = '/knowledgeLevel' />
-          <SoloConfidence path = '/soloConfidence' />
-          <FactOfTheDay path = '/factOfTheDay' />
-          <WordOfTheDay path = '/wordOfTheDay' />
-          <QuizOfTheDay path = '/quizOfTheDay' />
+          <KnowledgeLevel path="/knowledgeLevel" />
+          <SoloConfidence path="/soloConfidence" />
+          <FactOfTheDay path="/factOfTheDay" />
+          <WordOfTheDay path="/wordOfTheDay" />
+          <QuizOfTheDay path="/quizOfTheDay" />
+          <CreditScores path="/creditScores" />
         </Router>
       </div>
     );
