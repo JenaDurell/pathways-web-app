@@ -18,6 +18,7 @@ import SoloConfidence from "./Components/SoloConfidence";
 import FactOfTheDay from "./Components/FactOfTheDay";
 import WordOfTheDay from "./Components/WordOfTheDay";
 import QuizOfTheDay from "./Components/QuizOfTheDay";
+import DailyInspiration from './Components/DailyInspiration'
 import CreditScores from "./Components/CreditScores";
 
 export default class App extends Component {
@@ -58,6 +59,7 @@ export default class App extends Component {
           <FactOfTheDay path="/factOfTheDay" />
           <WordOfTheDay path="/wordOfTheDay" />
           <QuizOfTheDay path="/quizOfTheDay" />
+          <DailyInspiration path = "/dailyInspiration" />
           <CreditScores path="/creditScores" />
         </Router>
       </div>

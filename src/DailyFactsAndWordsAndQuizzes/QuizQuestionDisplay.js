@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import QuizAnswerDisplay from "./QuizAnswerDisplay";
 import quizContent from "./quizContent";
-
+import { format } from "date-fns";
 class QuizQuestionDisplay extends Component {
   state = {
     quizInfo: [],
   };
 
   setQuiz = () => {
-    console.log([quizContent[4]]);
+    const date = new Date();
+    var today = parseInt(format(date, "dd"));
 
     this.setState({
-      quizInfo: [quizContent[4]],
+      quizInfo: [quizContent[today]],
     });
   };
 

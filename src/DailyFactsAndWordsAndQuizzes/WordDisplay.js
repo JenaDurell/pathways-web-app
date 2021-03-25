@@ -1,18 +1,19 @@
 import React, { Component } from "react";
 import words from './words'
-
+import { format } from "date-fns";
 class WordDisplay extends Component{
     constructor(props) {
         super(props);
+        const date = new Date();
+        var today = parseInt(format(date, "dd"));
+        
 
     this.state = {
         data: words,
-        index: [8]
+        index: today
       };
     }
-    componentDidMount() {
-        this.interval = setInterval(() => this.setState({index: [+1] }), 1000);
-      }
+    
     render() {
         
       return (

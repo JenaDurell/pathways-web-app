@@ -16,17 +16,17 @@ export default function CreditScores(props) {
     <div className="title-page-header">
       <b>Credit Scores</b>
       
-      <div className="info">
+      <div id="section">
         <b>What is a credit score and how can it change my financial situation?</b>
         
+        <div id = 'info'>
+          <b>What is a credit score?</b>
+        </div>
 
         <div id="info">
-          Emergencies can arise at any time and you need to be prepared for when
-          they happen. An emergency fund does just that.
-          <br></br>
-          <br></br>
-          An emergency fund is a stash of money stored away to cover the costs
-          of any <b>"financial emergencies".</b>
+         Individuals can build their credit by maintaining a good credit score. A credit score is an analysis of a person's <b>"creditworthiness."</b>
+         <img id="icons" src={boat} alt="alarm" />
+          Banks and credit card companies use credit scores to <b>evaluate potential risk </b>from lending money to certain consumers e.g. who qualifies for a loan, at what interest rate and what credit limits.
         </div>
         
         <img id="icons" src={boat} alt="alarm" />
@@ -34,23 +34,21 @@ export default function CreditScores(props) {
       </div>
       
       <div className="section">
-        <b>Why have one? </b>
+        <b>Importance of Credit </b>
         
         <div id="info">
-          These unexpected expenses are <b>stressful</b> and can be{' '}
-          <b>costly.</b>
+         Having a good credit score will help determine the <b>types of loans </b>you are able to get and the <b>interest rates you pay.</b>
           <br></br>
           <br></br>
-          Having an emergency fund allows you to make the payment or payments
-          necessary to deal with unexpected situations{' '}
-          <b>without severely impacting your financial wellbeing.</b>
+          The lower your credit score, the higher your interest rates will be.
           <br></br>
-          <img id="icons" src={boat} alt="treeOnCar" />
-          
+          <br></br>
+          The lifetime cost of higher interest rates from a poor credit score can add up and even exceed six figures.
+          <img id="icons" src={boat} alt="alarm" />
         </div>
       </div>
       <div className="section">
-        <b>Avoid Debt</b>
+        <b>Credit Example</b>
        
         <div id="info">
           An emergency fund allows you to avoid making large purchases on a{' '}

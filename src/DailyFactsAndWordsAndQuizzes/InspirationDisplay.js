@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import facts from "./facts";
+import inspirations from "./inspirations";
 import { format } from "date-fns";
-class FactDisplay extends Component {
+class InspirationDisplay extends Component {
   constructor(props) {
     super(props);
 
@@ -10,16 +10,15 @@ class FactDisplay extends Component {
     
     this.state = {
       index: today,
-      data: facts,
+      data: inspirations,
     };
-    
   }
 
   render() {
     return (
-      <div id="fact-display">{this.state.data[this.state.index].fact}</div>
+      <div id="fact-display">{this.state.data[this.state.index].inspiration}</div>
     );
   }
 }
 
-export default FactDisplay;
+export default InspirationDisplay;
