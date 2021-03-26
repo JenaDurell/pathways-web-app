@@ -20,6 +20,8 @@ import WordOfTheDay from "./Components/WordOfTheDay";
 import QuizOfTheDay from "./Components/QuizOfTheDay";
 import DailyInspiration from './Components/DailyInspiration'
 import CreditScores from "./Components/CreditScores";
+import CreditCards from "./Components/CreditCards"
+
 
 export default class App extends Component {
   constructor(props) {
@@ -61,6 +63,8 @@ export default class App extends Component {
           <QuizOfTheDay path="/quizOfTheDay" />
           <DailyInspiration path = "/dailyInspiration" />
           <CreditScores path="/creditScores" />
+         <CreditCards path='/creditCards' />
+        
         </Router>
       </div>
     );
