@@ -3,6 +3,7 @@ import { Link } from '@reach/router';
 import '../styles/Pathways.css';
 import mapLoveBucks from '../imagesMap/mapLoveBucks.png';
 import mapPurpleGraph from '../imagesMap/mapPurpleGraph.png'
+import mainCards from '../imgBuildCredit/mainCards.png'
 
 function PathwaysHome() {
   useEffect(() => {
@@ -15,6 +16,13 @@ function PathwaysHome() {
       <div className="section">
         <b>Pathways</b>
       </div>
+
+      <div id="toEmergencyFund">
+          <Link to="/buildingCreditMap">
+            <input className="loveBucksIcon" type="image" src={mainCards} alt="credit cards" />
+          </Link>
+          <h5>Building Credit</h5>
+        </div>
 
         <div id="toEmergencyFund">
           <Link to="/emergencyFundMap">
