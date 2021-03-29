@@ -62,7 +62,7 @@ class QuizAnswerDisplay extends Component {
           }
         })}
         <br></br>
-        {this.state.guess ? null : <div> Thanks for answering! Swipe down to continue! </div>}
+        {this.state.guess ? null : <div> Thanks for answering! Click back to return to the home page. </div>}
       </div>
     );
   }
