@@ -12,12 +12,12 @@ export default function CalculatingCredit(props) {
   }, []);
   return (
     <div>
+      <div className="title-page-header">
       <Link to="/buildingCreditMap">
         <button id="backButton" type="button">
           Back
         </button>
       </Link>
-      <div className="title-page-header">
         <b>Calculating Credit</b>
 
         <div id="info">
@@ -31,8 +31,14 @@ export default function CalculatingCredit(props) {
             Your credit score is compiled of <b>five </b>different factors.
             <br></br>
             <br></br>
-            1. Payment history 2. Debt 3. Length of credit history 4. Types of
-            accounts 5. Recent credit activity
+            <ul>
+           <li>1. Payment history </li> 
+           <li>2. Debt </li>
+           <li>3. Length of credit history </li>
+           <li>4. Types of
+            accounts</li> 
+            <li>5. Recent credit activity</li>
+            </ul>
           </div>
         </div>
 

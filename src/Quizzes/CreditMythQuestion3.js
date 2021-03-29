@@ -24,7 +24,7 @@ class CreditMythQuestion3 extends Component {
         {this.state.quizInfo.map((data) => {
           return (
             <div>
-              <span id="question">{data.quiz}</span>
+              <span id="question"><b>{data.quiz}</b></span>
               <CreditMythAnswer
                 correctAnswer={data.correctAnswer}
                 answers={data.answers}

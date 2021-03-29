@@ -23,10 +23,10 @@ export default function CreditMyths(props) {
         <b>Credit Myths</b>
 
         <div id="info">
-          <b>
+        
             Test your knowledge! Can you decipher the truth from myths about
             credit?{" "}
-          </b>
+       
         </div>
 
         <CreditMythQuestion />

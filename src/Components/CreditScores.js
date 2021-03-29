@@ -10,12 +10,12 @@ export default function CreditScores(props) {
   }, []);
   return (
     <div>
+      <div className="title-page-header">
       <Link to="/buildingCreditMap">
         <button id="backButton" type="button">
           Back
         </button>
       </Link>
-      <div className="title-page-header">
         <b>Credit Scores</b>
 
         <div id="section">
