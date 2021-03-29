@@ -1,14 +1,20 @@
 import React, { useEffect } from "react";
+import '../styles/Pathways.css';
 import { Link } from "@reach/router";
-import boat from "../images/boat.png";
-
+import creditBling from "../imgBuildCredit/creditBling.png"
+import cashInHand from "../imgBuildCredit/cashInHand.png"
+import goldenPail from "../imgBuildCredit/goldenPail.png"
+import pinkPieChart from "../imgBuildCredit/pinkPieChart.png"
+import payButton from "../imgBuildCredit/payButton.png"
+import zeroPercent from "../imgBuildCredit/zeroPercent.png"
+import creditCards from "../imgBuildCredit/creditCards.png"
 export default function CreditCards(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div>
-      <Link to="/emergencyFundMap">
+      <Link to="/buildingCreditMap">
         <button id="backButton" type="button">
           Back
         </button>
@@ -31,7 +37,7 @@ export default function CreditCards(props) {
             When you apply for a credit card, there are a number of factors
             taken into account. One of the most important is your{" "}
             <b>credit score.</b>
-            <img id="icons" src={boat} alt="alarm" />
+            <img id="icons" src={creditBling} alt="credit bling" />
             Additional factors include the number of <b>delinquencies, </b>or
             payments that are over 30 days overdue,{" "}
             <b>how many cards or loans </b>you have applied for in recent years,
@@ -51,7 +57,7 @@ export default function CreditCards(props) {
             how much interest you will have to pay if you do not pay off at
             least the minimum on your card each month. However, you should{" "}
             <b>always pay off your card in full, </b>regardless of your APR.
-            <img id="icons" src={boat} alt="alarm" />
+            <img id="icons" src={cashInHand} alt="cash in hand" />
           </div>
         </div>
         <div className="section">
@@ -61,7 +67,7 @@ export default function CreditCards(props) {
             Your credit limit is the <b>total balance that you can carry.</b>{" "}
             For example, if your card has a credit limit of $1,000.00, you can
             make up to $1,000 worth of purchases on it before you pay it off.
-            <img id="icons" src={boat} alt="stress" />
+            <img id="icons" src={goldenPail} alt="golden pail" />
             If you try to make a purchase that would send you over your credit
             limit, your card will be declined. This is what people mean when
             they say they "maxed out" a credit card. However, you should{" "}
@@ -77,6 +83,7 @@ export default function CreditCards(props) {
             Optimally, you should even stay below 10%. Following the previous
             example, this means you never want to spend more than $300 on your
             card before you pay off the balance.
+            <img id="icons" src={pinkPieChart} alt="pink pie chart" />
           </div>
         </div>
         <div className="section">
@@ -101,7 +108,7 @@ export default function CreditCards(props) {
             <br></br>
             <br></br>
             However, you should <em>always pay your bill off in full each month.</em>
-            <img id="icons" src={boat} alt="alarm" />
+            <img id="icons" src={payButton} alt="pay button" />
           </div>
         </div>
         <div className="section">
@@ -112,6 +119,7 @@ export default function CreditCards(props) {
             <br></br>
             <br></br>
             <b>Do not take this into account when choosing a card </b>because smart credit card usage means paying your bill off in full every month, so you never carry a balance month to month.
+            <img id="icons" src={zeroPercent} alt="zero percent" />
           </div>
         </div>
         <div className="section">
@@ -122,10 +130,10 @@ export default function CreditCards(props) {
             <br></br>
             <br></br>
             Never spend more money than you have in your checking account. Doing so is a surefire way to end up in debth and worsen your credit score.
-            <img id="icons" src={boat} alt="alarm" />
+            <img id="icons" src={creditCards} alt="credit cards" />
           </div>
         </div>
-        <Link to="/pathwaysHome">
+        <Link to="/buildingCreditMap">
           <button id="finish" type="button">
             Finish
           </button>

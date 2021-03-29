@@ -6,26 +6,28 @@ class QuizAnswerDisplay extends Component {
     guess: true,
     correctAnswer: this.props.correctAnswer,
     selectedAnswer: '',
-  };
+    info: this.props.info,
+   
+};
 
-  onAnswer = (ans) => {
+onAnswer = (ans) => {
     this.setState({
-      guess: false,
-      selectedAnswer: ans,
+        guess: false,
+        selectedAnswer: ans,
     });
-  };
+};
 
-  render() {
+render() {
     return (
-      <div id="answer2">
+        <div id="answer2">
         {this.state.answers.map((ans, index) => {
-          if (this.state.guess) {
-            return (
-              <button
-                className="quizButton"
-                onClick={() => this.onAnswer(ans)}
-                key={index}
-              >
+            if (this.state.guess) {
+                return (
+                    <button
+                    className="quizButton"
+                    onClick={() => this.onAnswer(ans)}
+                    key={index}
+                    >
                 {ans}
               
               </button>
@@ -33,6 +35,7 @@ class QuizAnswerDisplay extends Component {
               
             );
           } else {
+
             if (ans === this.state.correctAnswer) {
               return (
                 <button className="correct" key={index}>
@@ -62,7 +65,7 @@ class QuizAnswerDisplay extends Component {
           }
         })}
         <br></br>
-        {this.state.guess ? null : <div> Thanks for answering! Click back to return to the home page. </div>}
+        {this.state.guess ? null : <div> <em>{this.state.info}</em></div>}
       </div>
     );
   }

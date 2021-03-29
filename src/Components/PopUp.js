@@ -10,7 +10,7 @@ export default class PopUp extends Component {
     return (
       <div className="modal">
         <div className = "modal_content" >
-            Thanks for answering! Swipe down to continue.
+            Thanks for answering! Click back to return to the home page.
             
            
             </div>
