@@ -75,7 +75,7 @@ export default function MaintainingCredit(props) {
           <b>Step 4</b>
 
           <div id="info">
-           <b>Avoid over-applying </b>for credit cards. New credit applications account for 10% of your score. Each time you apply for credit that prompts a <b>hard inquiry </b>into your report, and your score will decline. This is different from checking your score yourself, which will not affect your credit score.
+           <b>Avoid over-applying </b>for credit cards. New credit applications account for 10% of your score. Each time you apply for credit that prompts a <b>hard inquiry </b>into your report, your score will decline. This is different from checking your score yourself, which will not affect your credit score.
             <br></br>
             <br></br>
           So, try to avoid applying for multiple new credit cards or loans in a short period of time if you want to maintain your score.

@@ -63,7 +63,7 @@ export default function CreditScores(props) {
 
           <div id="info">
             For example: Jerome has a credit score in the <b>620 </b>range while
-            Kelly has a credit score that is over <b>760 </b>(the scale is from
+            Kelly has a credit score that is over <b>760 </b>(the scale is
             300-850).
             <img id="icons" src={happyGirlSadBoy} alt="stress" />
             Jerome would pay <b>$65,000 more </b>on a $200,000 mortgage than

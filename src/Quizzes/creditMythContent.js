@@ -4,7 +4,7 @@ let creditMythContent = [
       quiz: "All forms of debt affect your credit score the same way.",
       answers: ["True", "False"],
       correctAnswer: "False",
-      info: "Not all debt is the same. For example, $200,000 of credit card debt from maxing out credit cards willhurt your credit score substantially more than $200,000 of mortgage (home loan) debt. "
+      info: "Not all debt is the same. For example, $200,000 of credit card debt from maxing out credit cards will hurt your credit score substantially more than $200,000 of mortgage (home loan) debt. "
     },
     {
       id: 1,
@@ -48,7 +48,7 @@ let creditMythContent = [
        "True", "False"
       ],
       correctAnswer: "False",
-      info: "Debit and credit cards are completely seperate. Since debit cards are not a form of credit, they are not on your credit report and cannot affect your credit score."
+      info: "Debit and credit cards are completely separate. Since debit cards are not a form of credit, they are not on your credit report and cannot affect your credit score."
     },
     {
       id: 6,

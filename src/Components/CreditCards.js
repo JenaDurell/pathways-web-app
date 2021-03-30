@@ -26,7 +26,7 @@ export default function CreditCards(props) {
           <b>
             Have a credit card? Or multiple? Looking to get your first?
             Regardless, this module will teach you the ins and outs of applying
-            for using credit cards.
+            for and using credit cards.
           </b>
 
           <div className="section">
@@ -49,7 +49,7 @@ export default function CreditCards(props) {
           <b>APR </b>
 
           <div id="info">
-            THere are two main featurs of your credit card: <b>APR </b>and{" "}
+            There are two main featurs of your credit card: <b>APR </b>and{" "}
             <b>Credit Limit.</b>
             <br></br>
             <br></br>
@@ -65,7 +65,7 @@ export default function CreditCards(props) {
 
           <div id="info">
             Your credit limit is the <b>total balance that you can carry.</b>{" "}
-            For example, if your card has a credit limit of $1,000.00, you can
+            For example, if your card has a credit limit of $1,000, you can
             make up to $1,000 worth of purchases on it before you pay it off.
             <img id="icons" src={goldenPail} alt="golden pail" />
             If you try to make a purchase that would send you over your credit
@@ -79,7 +79,7 @@ export default function CreditCards(props) {
 
           <div id="info">
             The amount of credit you use before paying it off (your{" "}
-            <b>credit Utilization rate</b>) should stay below <b>30%.</b>{" "}
+            <b>credit utilization rate</b>) should stay below <b>30%.</b>{" "}
             Optimally, you should even stay below 10%. Following the previous
             example, this means you never want to spend more than $300 on your
             card before you pay off the balance.
@@ -93,7 +93,7 @@ export default function CreditCards(props) {
             periods, rewards, points, and bonuses.
             <br></br>
             <br></br>
-            <b>Fees </b>cam be anything from <b>annual fees </b>to{" "}
+            <b>Fees </b>can be anything from <b>annual fees </b>to{" "}
             <b>foreign transaction fees </b>and <b>balance transfer fees. </b>An
             annual fee is sort of like a membership cost, while foreign
             transaction fees charge you if you use your card in another country.
@@ -104,7 +104,7 @@ export default function CreditCards(props) {
         <div className="section">
           <b>Minimum</b>
           <div id="info">
-            The <b>"minimum</b> is the <b>lowest amount of your balance that you can pay off each month </b>without suffering penalties, generally a percentage of your total balance. 
+            The <b>"minimum"</b> is the <b>lowest amount of your balance that you can pay off each month </b>without suffering penalties, generally a percentage of your total balance. 
             <br></br>
             <br></br>
             However, you should <em>always pay your bill off in full each month.</em>
@@ -129,7 +129,7 @@ export default function CreditCards(props) {
             When you have a credit card, <b>think of it like a debit card!</b>
             <br></br>
             <br></br>
-            Never spend more money than you have in your checking account. Doing so is a surefire way to end up in debth and worsen your credit score.
+            Never spend more money than you have in your checking account. Doing so is a surefire way to end up in debt and worsen your credit score.
             <img id="icons" src={creditCards} alt="credit cards" />
           </div>
         </div>
