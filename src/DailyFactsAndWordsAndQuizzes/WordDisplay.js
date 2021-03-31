@@ -12,6 +12,7 @@ class WordDisplay extends Component{
         data: words,
         index: today
       };
+      console.log(this.state.data)
     }
     
     render() {

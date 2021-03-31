@@ -153,7 +153,22 @@ let words = [
         id: 31,
         word: 'Consumer Price Index (CPI)',
         def: 'A measure that examines the weighted average of prices of a basket of consumer goods and services, such as transportation, food, and medical care. It is calculated by taking price changes for each item in the predetermined basket of goods and averaging them.'
-    }
+    },
+    {
+        id:32,
+        word: 'Asset',
+        def: 'Something that is said to hold positive economic value.'
+    },
+    {
+        id: 33,
+        word: 'Appreciation',
+        def: 'When the value of an asset increases in value'
+    },
+    {
+        id: 34,
+        word: ' Depreciation',
+        def: 'When the value of an asset decreases in value'
+    },
 ]
 
 
