@@ -82,7 +82,7 @@ export default function CalculatingCredit(props) {
           <b>Length of credit history</b>
 
           <div id="info">
-            The Length of your credit history makes up <b>15% </b>of your score.
+            The length of your credit history makes up <b>15% </b>of your score.
             <br></br>
             <br></br>
             The <b>longer </b>your history of making payments on time, the{" "}
