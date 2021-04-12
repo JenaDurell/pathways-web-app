@@ -25,6 +25,14 @@ import CreditCards from "./Components/CreditCards";
 import CalculatingCredit from "./Components/CalculatingCredit";
 import MaintainingCredit from "./Components/MaintainingCredit";
 import CreditMyths from "./Components/CreditMyths";
+import ETF from "./Components/ETF"
+import MutualFunds from "./Components/MutualFunds"
+import MoreStockMarket from "./Components/MoreStockMarket"
+import TradingAssets from "./Components/TradingAssets"
+import WhereToInvest from "./Components/WhereToInvest"
+import RiskManagement from "./Components/RiskManagement"
+import RiskQuestion from "./RiskProfile/RiskQuestion"
+import Investing2Map from "./Components/Investing2Map"
 
 export default class App extends Component {
   constructor(props) {
@@ -71,6 +79,15 @@ export default class App extends Component {
           <CalculatingCredit path="/calculatingCredit" />
           <MaintainingCredit path="/maintainingCredit" />
           <CreditMyths path="/creditMyths" />
+          <ETF path = "/ETF" />
+          <MutualFunds path = '/mutualFunds' />
+          <MoreStockMarket path = '/moreStockMarket' />
+          <TradingAssets path = '/tradingAssets' />
+          <WhereToInvest path = '/whereToInvest' />
+          <RiskManagement path = '/riskManagement' />
+          <RiskQuestion path = '/riskQuestion' />
+          <Investing2Map path = '/investing2Map' />
+
         </Router>
       </div>
     );

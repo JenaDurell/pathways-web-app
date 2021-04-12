@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-class QuizAnswerDisplay extends Component {
+class Investing2Answer14 extends Component {
   state = {
     answers: this.props.answers,
     guess: true,
     correctAnswer: this.props.correctAnswer,
-    selectedAnswer: "",
+    selectedAnswer: '',
   };
 
   onAnswer = (ans) => {
@@ -51,22 +51,19 @@ class QuizAnswerDisplay extends Component {
               );
             } else {
               return (
-                <button className="quizButton" key={index}>
+                <button
+                  className="quizButton"
+                 
+                  key={index}
+                >
                   {ans}
                 </button>
               );
             }
           }
         })}
-        <br></br>
-        {this.state.guess ? null : (
-          <div>
-            {" "}
-            Thanks for answering! Click back to return to the home page.{" "}
-          </div>
-        )}
       </div>
     );
   }
 }
-export default QuizAnswerDisplay;
+export default Investing2Answer14;
