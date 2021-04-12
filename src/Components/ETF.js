@@ -12,7 +12,7 @@ export default function ETF(props) {
   }, []);
   return (
     <div>
-      <Link to="/buildingCreditMap">
+      <Link to="/investing2Map">
         <button id="backButton" type="button">
           Back
         </button>
@@ -100,7 +100,7 @@ export default function ETF(props) {
           </div>
         </div>
 
-        <Link to="/buildingCreditMap">
+        <Link to="/investing2Map">
           <button id="finish" type="button">
             Finish
           </button>

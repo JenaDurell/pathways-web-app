@@ -15,7 +15,7 @@ export default function TradingAssets(props) {
   }, []);
   return (
     <div>
-      <Link to="/buildingCreditMap">
+      <Link to="/investing2Map">
         <button id="backButton" type="button">
           Back
         </button>
@@ -134,7 +134,7 @@ export default function TradingAssets(props) {
             </div>
           </div>
 
-          <Link to="/buildingCreditMap">
+          <Link to="/investing2Map">
             <button id="finish" type="button">
               Finish
             </button>

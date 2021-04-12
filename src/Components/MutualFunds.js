@@ -19,7 +19,7 @@ export default function MutualFunds(props) {
   }, []);
   return (
     <div>
-      <Link to="/buildingCreditMap">
+      <Link to="/investing2Map">
         <button id="backButton" type="button">
           Back
         </button>
@@ -126,7 +126,7 @@ export default function MutualFunds(props) {
             Mutual Funds are incredibly comon and now you know why!
           </div>
         </div>
-        <Link to="/buildingCreditMap">
+        <Link to="/investing2Map">
           <button id="finish" type="button">
             Finish
           </button>

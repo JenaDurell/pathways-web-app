@@ -20,7 +20,7 @@ export default function WhereToInvest(props) {
   }, []);
   return (
     <div>
-      <Link to="/buildingCreditMap">
+      <Link to="/investing2Map">
         <button id="backButton" type="button">
           Back
         </button>
@@ -100,7 +100,7 @@ export default function WhereToInvest(props) {
             Another Pathway complete. Let's start investing!
           </div>
 
-          <Link to="/buildingCreditMap">
+          <Link to="/investing2Map">
             <button id="finish" type="button">
               Finish
             </button>
