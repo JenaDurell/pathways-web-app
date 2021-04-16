@@ -30,6 +30,7 @@ class RiskQuestion extends Component {
                       <div>
                           <span id= "question">{data.question}</span>
                           <RiskAnswer
+                          guess= {false}
                           answers = {data.answers} 
                           one = {data.one}
                           two = {data.two}
