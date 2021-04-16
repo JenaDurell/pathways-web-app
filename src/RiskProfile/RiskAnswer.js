@@ -1,11 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 
 class RiskAnswer extends Component {
-  state = {
+constructor(props) {
+  super(props)
+
+  this.state = {
     answers: this.props.answers,
     guess: true,
     selectedAnswer: "",
-    score: this.props.score,
+    score: 0,
     one: this.props.one,
     two: this.props.two,
     three: this.props.three,
@@ -33,35 +36,32 @@ class RiskAnswer extends Component {
     three6: this.props.three6,
     four6: this.props.four6,
   };
-
-  onAnswer = (ans) => {
-    if (ans === this.state.one || this.state.one2 || this.state.one3) {
-      this.setState({
-        score: this.props.score + 1,
-      });
-    }
-    this.setState({
-        guess: false,
-        selectedAnswer: ans,
-        score: this.state.score,
-    });
+}
+onAnswer = (ans) => {
+  this.setState({
+    guess: false,
+    selectedAnswer: ans,
+  });
 };
 render() {
-    return (
-      <div id="answer2">
+  return (
+    <div id="answer2">
         {this.state.answers.map((ans, index) => {
           if (this.state.guess) {
             return (
               <button
-                className="quizButton"
-                onClick={() => this.onAnswer(ans)}
-                key={index}
+              className="quizButton"
+              onClick={() => this.onAnswer(ans)}
+              key={index}
               >
                 {ans}
               </button>
             );
           } else {
-            if (ans === this.state.correctAnswer) {
+            if (ans === this.state.one || this.state.one2 || this.state.one3) {
+              this.setState({
+                score: this.state.score +1
+              })
               return (
                 <button className="correct" key={index}>
                   {ans}

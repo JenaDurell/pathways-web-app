@@ -13,7 +13,7 @@ export default function RiskManagement(props) {
   }, []);
   return (
     <div>
-      <Link to="/buildingCreditMap">
+      <Link to="/investing2Map">
         <button id="backButton" type="button">
           Back
         </button>
@@ -67,11 +67,11 @@ export default function RiskManagement(props) {
               src={cards}
               alt="cards"
             />
-            Answer the following questions to see your risk profile. There are no right or wrong answers so <b>be honest!</b>
+            Make sure to complete the Risk Profile Pathway to find out what your risk profile is.
           </div>
         </div>
 
-        <Link to="/buildingCreditMap">
+        <Link to="/investing2Map">
           <button id="finish" type="button">
             Finish
           </button>

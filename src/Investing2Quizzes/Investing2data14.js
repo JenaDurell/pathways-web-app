@@ -1,14 +1,12 @@
 let quizData14 = [
     {
       id: 14,
-      quiz: 'What do brokers do?',
+      quiz: 'Which asset allocation is associated with higher risk?',
       answers: [
-        'a) Execute trades',
-        'b) Provide advice',
-        'c) Create plans',
-        'd) All of the above'
+        'a) 90% stocks and 10% bonds',
+        'b) 50% stocks and 50% bonds',
       ],
-      correctAnswer: 'd) All of the above'
+      correctAnswer:  'a) 90% stocks and 10% bonds'
     },
   ];
   export default quizData14;

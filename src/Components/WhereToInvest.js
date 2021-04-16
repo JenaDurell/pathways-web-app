@@ -87,12 +87,11 @@ export default function WhereToInvest(props) {
             <b>FInancial Advisor Cost</b>
 
             <div id="info">
-              Because financial advisors probide several services, they are quite <b>expensive </b>and might not be realistic for a college student or recent graduate.
+              Because financial advisors provide several services, they are quite <b>expensive </b>and might not be realistic for a college student or recent graduate.
               <img id="icons" src={moneyBag} alt="bag of money" />
             </div>
             <Investing2Quiz11 />
             <Investing2Quiz12 />
-            <Investing2Quiz13 />
             <div className="section">
             <b>Great Job!</b>
             <img id="icons" src={passingCash} alt="passing cash" />

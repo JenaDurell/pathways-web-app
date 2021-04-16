@@ -123,7 +123,7 @@ export default function MutualFunds(props) {
           <img id="icons" src={certificate} alt="certificate" />
           <br></br>
           </div>
-            Mutual Funds are incredibly comon and now you know why!
+            Mutual Funds are incredibly common and now you know why!
           </div>
         </div>
         <Link to="/investing2Map">

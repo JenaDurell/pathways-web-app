@@ -5,7 +5,7 @@ import Investing2Quiz1 from "../Investing2Quizzes/Investing2Quiz1";
 import redX from "../imgInvest2/redX.png";
 import greenCheck from "../imgInvest2/greenCheck.png";
 import investPathIcon from "../imgInvest2/investPathIcon.png";
-
+import pieChartBarGraph from '../imgInvest2/pieChartBarGraph.png'
 export default function ETF(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,8 +29,7 @@ export default function ETF(props) {
           <div id="info">
             ETFs or <b> Exchange Traded Funds </b>are a type of security that
             contain multiple assets or securities such as stocks and bonds.
-            <br></br>
-            <br></br>
+            <img id="icons" src={pieChartBarGraph} alt="pie chart and bar graph" />
             ETFs are just like other marketable securities and can be{" "}
             <b>bought and sold on the market </b>throughout the day. An ETF can
             hold <b>hundreds or thousands of stocks </b>across various
@@ -46,7 +45,7 @@ export default function ETF(props) {
             only holds <b>foreign securities.</b> Other types of ETFs include:
             <br></br>
             <br></br>
-            1.<b>Bond ETFs</b> invest in bonds.
+            1. <b>Bond ETFs</b> invest in bonds.
             <br></br>
             <br></br>
             2. <b>Industry ETFs</b> track specific industries such as technology

@@ -25,7 +25,7 @@ export default function TradingAssets(props) {
 
         <div id="info">
           <b>
-            Become bettwer at trading your assets by familiarizing yourself with
+            Become better at trading your assets by familiarizing yourself with
             the following terms and methods.
           </b>
 
