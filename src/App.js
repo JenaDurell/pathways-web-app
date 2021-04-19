@@ -33,6 +33,7 @@ import WhereToInvest from "./Components/WhereToInvest"
 import RiskManagement from "./Components/RiskManagement"
 import RiskQuestion from "./RiskProfile/RiskQuestion"
 import Investing2Map from "./Components/Investing2Map"
+import RiskProfile from "./Components/RiskProfile"
 
 export default class App extends Component {
   constructor(props) {
@@ -87,6 +88,7 @@ export default class App extends Component {
           <RiskManagement path = '/riskManagement' />
           <RiskQuestion path = '/riskQuestion' />
           <Investing2Map path = '/investing2Map' />
+          <RiskProfile path= 'riskProfile' />
 
         </Router>
       </div>

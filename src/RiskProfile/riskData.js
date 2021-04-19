@@ -1,5 +1,6 @@
 let riskData = [
   {
+    id: 1,
     question: "Age?",
     answers: ["a) Under 20", "b) 20-30", "c) 30+"],
     three: "a) Under 20",
