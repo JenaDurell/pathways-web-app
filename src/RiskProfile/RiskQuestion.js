@@ -115,7 +115,7 @@ export default function RiskQuestion() {
 
   const rhinoType = {
     name: "Moderately Aggressive",
-    description: "You are yound and have a long time horizon so you can afford to take a little bit more risk.",
+    description: "You are young and have a long time horizon so you can afford to take a little bit more risk.",
     percent: "80% Stocks, 20% Bonds",
     icon:  <img id="icons" src={rhino} alt="cards" />,
 
