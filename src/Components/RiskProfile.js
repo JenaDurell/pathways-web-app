@@ -34,11 +34,7 @@ export default function RiskProfile(props) {
 
             <RiskQuestion />
           </div>
-      <Link to="/pathwaysHome">
-        <button id="finish" type="button">
-          Finish
-        </button>
-      </Link>
+      
     </div>
   );
 }

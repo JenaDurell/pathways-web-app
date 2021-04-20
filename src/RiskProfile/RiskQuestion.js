@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "@reach/router";
 import "../styles/Pathways.css";
 import whale from "../imgRiskProfile/whale.png";
 import koala from "../imgRiskProfile/koala.png";
@@ -91,7 +92,7 @@ export default function RiskQuestion() {
   const whaleType = {
     name: "Conservative",
     description:
-      "You have a very short time horizon and you do not like taking risks. You prefer to have a guaranteed gain instead of the possibility of a loss. \n \n You would benefit from investing in the following asset allocation: \n\n",
+      "You have a very short time horizon and you do not like taking risks. You prefer to have a guaranteed gain instead of the possibility of a loss.",
     percent: "0% Stocks, 100% Bonds",
     icon: <img id="icons" src={whale} alt="cards" />,
   };
@@ -99,7 +100,7 @@ export default function RiskQuestion() {
   const koalaType = {
     name: "Moderately Conservative",
     description:
-      "Your time horizon is on the shorter side and you like playing it safe rather than risking a loss. You would benefit from investing in the following asset allocation:",
+      "Your time horizon is on the shorter side and you like playing it safe rather than risking a loss. ",
     percent: "30% Stocks, 70% Bonds",
     icon: <img id="icons" src={koala} alt="cards" />,
   };
@@ -107,14 +108,14 @@ export default function RiskQuestion() {
   const deerType = {
     name: "Conservative",
     description: 
-    "You have a shorter time horizon but want to see some growth. You would benefit from investing in the following asset allocation:",
+    "You have a shorter time horizon but want to see some growth.",
     percent: "60% Stocks, 40% Bonds",
     icon:  <img id="icons" src={deer} alt="cards" />,
   }
 
   const rhinoType = {
     name: "Moderately Aggressive",
-    description: "You are yound and have a long time horizon so you can afford to take a little bit more risk. You would benefit from investing in the following asset allocation:",
+    description: "You are yound and have a long time horizon so you can afford to take a little bit more risk.",
     percent: "80% Stocks, 20% Bonds",
     icon:  <img id="icons" src={rhino} alt="cards" />,
 
@@ -122,7 +123,7 @@ export default function RiskQuestion() {
 
   const lionType = {
     name: "Aggressive",
-    description: "You are yound with a long time horizon. You are confident in your investing ability and you like taking risks. You would benefit from investing in the following asset allocation:",
+    description: "You are yound with a long time horizon. You are confident in your investing ability and you like taking risks.",
     percent: "100% Stocks, 0% Bonds",
     icon: <img id="icons" src={lion} alt="cards" />,
 
@@ -197,16 +198,31 @@ export default function RiskQuestion() {
   return (
     <div id="info">
       {showScore ? (
-        <div className="section">{profile} 
-      
-        <b>Great Job!</b>
-        <img id="icons" src={risk} alt="cards" />
-        <b>Risk Profile</b>
-        
+        <div>
+        <div id = "riskType0">{profile[0]}</div>
+        <br></br>
+        <div>{profile[1]}</div>
+        <br></br>
+        You would benefit from investing in the folloing asset allocation: 
+        <br></br>
+        <br></br>
+        <div id = "riskType0"> <b>{profile[2]}</b></div>
+        <div>{profile[3]}</div>
+       
+        <div className="section"> <b>Great Job!</b> </div>
+        <img id="icons" src={risk} alt="risk" />
+        <br></br>
+       <div id="riskType0"> <b>Risk Profile</b>
+        </div>
         <p id = 'info'>
         Now that you have a better understanding of your risk profile, you can be more confident in your investment decisions!
         </p>
-        </div>
+        <Link to="/pathwaysHome">
+        <button id="finish" type="button">
+          Finish
+        </button>
+      </Link>
+       </div>
       ) : (
         <>
           <div id="question">{questions[currentQuestion].questionText}</div>
