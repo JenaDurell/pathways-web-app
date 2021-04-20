@@ -102,7 +102,7 @@ let words = [
     {
         id: 21,
         word: 'Equity',
-        def: 'Represents the amount of money that would be returned to a company’s shareholders if all of the assets were liquidated and all of the company\'s debt was paid off in the case of liquidation. \n \n <b>Equity</b> is ownership of assets that may have debts or other liabilities attached to them. \n \n Generally think of equity as a degree of ownership in any asset after subtracting all debts associated with that asset. \n \n  A stock or any other security representing an ownership interest in a company.'
+        def: 'Represents the amount of money that would be returned to a company’s shareholders if all of the assets were liquidated and all of the company\'s debt was paid off in the case of liquidation. Equity is ownership of assets that may have debts or other liabilities attached to them. Generally think of equity as a degree of ownership in any asset after subtracting all debts associated with that asset.  A stock or any other security representing an ownership interest in a company.'
     },
     {
         id: 22,
