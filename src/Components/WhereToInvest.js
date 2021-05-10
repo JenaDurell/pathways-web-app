@@ -99,7 +99,7 @@ export default function WhereToInvest(props) {
             Another Pathway complete. Let's start investing!
           </div>
 
-          <Link to="/investing2Map">
+          <Link to="/pathwaysHome">
             <button id="finish" type="button">
               Finish
             </button>
