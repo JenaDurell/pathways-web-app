@@ -203,7 +203,7 @@ export default function RiskQuestion() {
         <br></br>
         <div>{profile[1]}</div>
         <br></br>
-        You would benefit from investing in the folloing asset allocation: 
+        You would benefit from investing in the following asset allocation: 
         <br></br>
         <br></br>
         <div id = "riskType0"> <b>{profile[2]}</b></div>
